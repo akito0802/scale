@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       window.scaleData = data;
       initializeSelectors();
+    })
+    .catch((err) => {
+      document.getElementById("scale-output").textContent = "スケールデータの読み込みに失敗しました";
     });
 });
 
