@@ -1,86 +1,79 @@
-const keySelect = document.getElementById("key-select");
-const categorySelect = document.getElementById("category-select");
-const scaleSelect = document.getElementById("scale-select");
-const output = document.getElementById("output");
 
-let scaleData = {};
-const CATEGORY_LIST = ["メジャー", "マイナー", "チャーチ", "ジャズ"];
+document.addEventListener("DOMContentLoaded", () => {
+  if (!window.scaleData) {
+    document.getElementById("output").textContent = "スケールデータが読み込めませんでした";
+    return;
+  }
+  initSelectors();
+});
 
-fetch("scales.json")
-  .then(res => res.json())
-  .then(data => {
-    scaleData = data;
-    initUI();
-  });
+function initSelectors() {
+  const keySelect = document.getElementById("key-select");
+  const categorySelect = document.getElementById("category-select");
+  const scaleSelect = document.getElementById("scale-select");
 
-function initUI() {
-  keySelect.innerHTML = "";
-  Object.keys(scaleData).forEach(key => {
+  for (const key in scaleData) {
     const opt = document.createElement("option");
     opt.value = key;
     opt.textContent = key;
     keySelect.appendChild(opt);
-  });
-  keySelect.value = "C";
-  populateCategories();
+  }
+
+  keySelect.addEventListener("change", updateCategories);
+  categorySelect.addEventListener("change", updateScales);
+  scaleSelect.addEventListener("change", displayScale);
+
+  updateCategories();
 }
 
-function populateCategories() {
+function updateCategories() {
+  const key = document.getElementById("key-select").value;
+  const categorySelect = document.getElementById("category-select");
+  const scaleSelect = document.getElementById("scale-select");
   categorySelect.innerHTML = "";
-  const key = keySelect.value;
-  const availableCats = Object.keys(scaleData[key]);
+  scaleSelect.innerHTML = "";
 
-  CATEGORY_LIST.forEach(cat => {
-    const exists = availableCats.includes(cat);
+  for (const cat in scaleData[key]) {
     const opt = document.createElement("option");
     opt.value = cat;
-    opt.textContent = exists ? cat : cat + "（なし）";
-    if (!exists) opt.disabled = true;
+    opt.textContent = cat;
     categorySelect.appendChild(opt);
-  });
+  }
 
-  const firstAvailable = CATEGORY_LIST.find(cat => availableCats.includes(cat));
-  categorySelect.value = firstAvailable || CATEGORY_LIST[0];
-  populateScales();
+  updateScales();
 }
 
-function populateScales() {
+function updateScales() {
+  const key = document.getElementById("key-select").value;
+  const cat = document.getElementById("category-select").value;
+  const scaleSelect = document.getElementById("scale-select");
   scaleSelect.innerHTML = "";
-  const key = keySelect.value;
-  const category = categorySelect.value;
-  const scalesObj = scaleData[key][category];
 
-  if (!scalesObj) {
-    scaleSelect.insertAdjacentHTML("beforeend", `<option>該当なし</option>`);
-    output.textContent = "このキーにはそのカテゴリーのスケールがありません。";
-    return;
-  }
-
-  const scales = Object.keys(scalesObj);
-  scales.forEach(scl => {
+  for (const sc in scaleData[key][cat]) {
     const opt = document.createElement("option");
-    opt.value = scl;
-    opt.textContent = scl;
+    opt.value = sc;
+    opt.textContent = sc;
     scaleSelect.appendChild(opt);
-  });
+  }
 
-  scaleSelect.value = scales[0];
-  updateOutput();
+  displayScale();
 }
 
-function updateOutput() {
-  const key = keySelect.value;
-  const category = categorySelect.value;
-  const scale = scaleSelect.value;
-  const notes = scaleData[key][category]?.[scale];
-  if (!notes) {
-    output.innerHTML = "構成音が見つかりません。";
+function displayScale() {
+  const key = document.getElementById("key-select").value;
+  const cat = document.getElementById("category-select").value;
+  const sc = document.getElementById("scale-select").value;
+  const output = document.getElementById("output");
+
+  if (!scaleData[key] || !scaleData[key][cat] || !scaleData[key][cat][sc]) {
+    output.textContent = "データなし";
     return;
   }
-  output.innerHTML = "<strong>構成音：</strong><br>" +
-    notes.map(n => `${n.degree} (${n.name})`).join(", ");
-}
 
-keySelect.addEventListener("change", populateCategories);
-categorySelect.addEventListener("change", populateScales);
-scaleSelect.addEventListener("change", updateOutput);
+  let html = '<table><tr><th>度数</th><th>音名</th><th>説明</th></tr>';
+  scaleData[key][cat][sc].forEach(item => {
+    html += `<tr><td>${item.degree}</td><td>${item.note}</td><td>${item.description||''}</td></tr>`;
+  });
+  html += '</table>';
+  output.innerHTML = html;
+}
