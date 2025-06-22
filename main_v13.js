@@ -1,68 +1,84 @@
 
-let data;
-const CATEGORIES = ["メジャー","マイナー","チャーチ","ジャズ","ブルース","民族"];
-
-const keySel = document.getElementById("key-select");
-const catSel = document.getElementById("category-select");
-const scaleSel = document.getElementById("scale-select");
-const outputDiv = document.getElementById("output");
-const descDiv = document.getElementById("description");
-
-fetch("scales.json")
-  .then(r => r.json())
-  .then(json => { data = json; init(); });
-
-function init() {
-  keySel.innerHTML = "";
-  Object.keys(data).forEach(k => keySel.insertAdjacentHTML("beforeend", `<option value="${k}">${k}</option>`));
-  keySel.value = "C";
-  populateCategories();
-}
-
-function populateCategories() {
-  catSel.innerHTML = "";
-  const keyObj = data[keySel.value];
-  CATEGORIES.forEach(c => {
-    const exists = keyObj.hasOwnProperty(c);
-    catSel.insertAdjacentHTML("beforeend",
-      `<option value="${c}" ${exists? "": "disabled"}>${c}${exists?"":" (なし)"}</option>`);
-  });
-  if (!keyObj.hasOwnProperty(catSel.value)) {
-    catSel.value = CATEGORIES.find(c=>keyObj.hasOwnProperty(c));
-  }
-  populateScales();
-}
-
-function populateScales() {
-  scaleSel.innerHTML = "";
-  const scalesObj = data[keySel.value][catSel.value];
-  Object.keys(scalesObj).forEach(s => scaleSel.insertAdjacentHTML("beforeend", `<option value="${s}">${s}</option>`));
-  updateOutput();
-}
-
-function updateOutput() {
-  const notes = data[keySel.value][catSel.value][scaleSel.value];
-  if(!notes){outputDiv.textContent="スケールなし";descDiv.textContent="";return;}
-  const degRow = notes.map(n=>`<td>${n.degree}</td>`).join("");
-  const nameRow = notes.map(n=>`<td><b>${n.name}</b></td>`).join("");
-  outputDiv.innerHTML = `<table class="note-table"><tr>${degRow}</tr><tr>${nameRow}</tr></table>`;
-
-  // description 表示（あれば）
-  if (notes[0] && notes[0].description) {
-    descDiv.textContent = notes[0].description;
-  } else {
-    descDiv.textContent = "";
-  }
-}
-
-keySel.addEventListener("change", ()=>{
-  const prevCat = catSel.value;
-  const prevScale = scaleSel.value;
-  populateCategories();
-  if([...catSel.options].some(o=>o.value===prevCat&&!o.disabled)) catSel.value=prevCat;
-  populateScales();
-  if([...scaleSel.options].some(o=>o.value===prevScale)) scaleSel.value=prevScale;
-  updateOutput();
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/scales.json")
+    .then((res) => res.json())
+    .then((data) => {
+      window.scaleData = data;
+      initSelectors();
+    })
+    .catch((err) => {
+      document.getElementById("output").textContent = "スケールデータの読み込みに失敗しました";
+    });
 });
-catSel.addEventListener("change", ()=>{populateScales();});
-scaleSel.addEventListener("change", updateOutput);
+
+function initSelectors() {
+  const keySelect = document.getElementById("key-select");
+  const categorySelect = document.getElementById("category-select");
+  const scaleSelect = document.getElementById("scale-select");
+
+  for (const key in scaleData) {
+    const opt = document.createElement("option");
+    opt.value = key;
+    opt.textContent = key;
+    keySelect.appendChild(opt);
+  }
+
+  keySelect.addEventListener("change", () => updateCategories());
+  categorySelect.addEventListener("change", () => updateScales());
+  scaleSelect.addEventListener("change", () => displayScale());
+
+  updateCategories();
+}
+
+function updateCategories() {
+  const key = document.getElementById("key-select").value;
+  const categorySelect = document.getElementById("category-select");
+  categorySelect.innerHTML = "";
+
+  if (!scaleData[key]) return;
+
+  for (const cat in scaleData[key]) {
+    const opt = document.createElement("option");
+    opt.value = cat;
+    opt.textContent = cat;
+    categorySelect.appendChild(opt);
+  }
+
+  updateScales();
+}
+
+function updateScales() {
+  const key = document.getElementById("key-select").value;
+  const category = document.getElementById("category-select").value;
+  const scaleSelect = document.getElementById("scale-select");
+  scaleSelect.innerHTML = "";
+
+  if (!scaleData[key] || !scaleData[key][category]) return;
+
+  for (const scale in scaleData[key][category]) {
+    const opt = document.createElement("option");
+    opt.value = scale;
+    opt.textContent = scale;
+    scaleSelect.appendChild(opt);
+  }
+
+  displayScale();
+}
+
+function displayScale() {
+  const key = document.getElementById("key-select").value;
+  const category = document.getElementById("category-select").value;
+  const scale = document.getElementById("scale-select").value;
+  const output = document.getElementById("output");
+
+  if (!scaleData[key] || !scaleData[key][category] || !scaleData[key][category][scale]) {
+    output.textContent = "スケール情報が見つかりません";
+    return;
+  }
+
+  const data = scaleData[key][category][scale];
+  let html = `<table><tr><th>度数</th><th>音名</th><th>説明</th></tr>`;
+  html += data.map(note => `<tr><td>${note.degree}</td><td>${note.note}</td><td>${note.description || ""}</td></tr>`).join("");
+  html += `</table>`;
+  output.innerHTML = html;
+}
