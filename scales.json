@@ -219,6 +219,218 @@
           "name": "A#"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "7度",
+          "name": "B"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "b2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "b6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "#4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "7度",
+          "name": "B"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "b6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "b2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "b5度",
+          "name": "F#"
+        },
+        {
+          "degree": "b6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ]
     }
   },
   "C#": {
@@ -435,6 +647,218 @@
         {
           "degree": "5度",
           "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "7度",
+          "name": "C"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "b2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "b6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "#4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "7度",
+          "name": "C"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "b6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "b2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "b5度",
+          "name": "G"
+        },
+        {
+          "degree": "b6度",
+          "name": "A"
         },
         {
           "degree": "b7度",
@@ -663,6 +1087,218 @@
           "name": "C"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "7度",
+          "name": "C#"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "b2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "b6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "#4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "7度",
+          "name": "C#"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "b6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "b2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "b5度",
+          "name": "G#"
+        },
+        {
+          "degree": "b6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ]
     }
   },
   "D#": {
@@ -879,6 +1515,218 @@
         {
           "degree": "5度",
           "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "7度",
+          "name": "D"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "b2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "b6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "#4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "7度",
+          "name": "D"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "b6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "b2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "b5度",
+          "name": "A"
+        },
+        {
+          "degree": "b6度",
+          "name": "B"
         },
         {
           "degree": "b7度",
@@ -1107,6 +1955,218 @@
           "name": "D"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "7度",
+          "name": "D#"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "b2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "b6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "#4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "7度",
+          "name": "D#"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "b6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "b2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "b5度",
+          "name": "A#"
+        },
+        {
+          "degree": "b6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ]
     }
   },
   "F": {
@@ -1323,6 +2383,218 @@
         {
           "degree": "5度",
           "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "7度",
+          "name": "E"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "b2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "b6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "#4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "7度",
+          "name": "E"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "b6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "b2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "b5度",
+          "name": "B"
+        },
+        {
+          "degree": "b6度",
+          "name": "C#"
         },
         {
           "degree": "b7度",
@@ -1551,6 +2823,218 @@
           "name": "E"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "7度",
+          "name": "F"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "b2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "b6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "#4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "7度",
+          "name": "F"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "b6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "b2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "b5度",
+          "name": "C"
+        },
+        {
+          "degree": "b6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ]
     }
   },
   "G": {
@@ -1767,6 +3251,218 @@
         {
           "degree": "5度",
           "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "7度",
+          "name": "F#"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "b2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "b6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "#4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "7度",
+          "name": "F#"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "b6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "b2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "b5度",
+          "name": "C#"
+        },
+        {
+          "degree": "b6度",
+          "name": "D#"
         },
         {
           "degree": "b7度",
@@ -1995,6 +3691,218 @@
           "name": "F#"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "7度",
+          "name": "G"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "b2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "b6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "#4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "7度",
+          "name": "G"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "b6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "b2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "b5度",
+          "name": "D"
+        },
+        {
+          "degree": "b6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ]
     }
   },
   "A": {
@@ -2211,6 +4119,218 @@
         {
           "degree": "5度",
           "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "7度",
+          "name": "G#"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "b2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "b6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "#4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "7度",
+          "name": "G#"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "b6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "b2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "b5度",
+          "name": "D#"
+        },
+        {
+          "degree": "b6度",
+          "name": "F"
         },
         {
           "degree": "b7度",
@@ -2439,6 +4559,218 @@
           "name": "G#"
         }
       ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "7度",
+          "name": "A"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "b2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "b6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "#4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "7度",
+          "name": "A"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "b6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "b2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "b5度",
+          "name": "E"
+        },
+        {
+          "degree": "b6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ]
     }
   },
   "B": {
@@ -2655,6 +4987,218 @@
         {
           "degree": "5度",
           "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ]
+    },
+    "チャーチ": {
+      "アイオニアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "7度",
+          "name": "A#"
+        }
+      ],
+      "ドリアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "フリジアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "b2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "b6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "リディアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "#4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "7度",
+          "name": "A#"
+        }
+      ],
+      "ミクソリディアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "エオリアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "b6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "ロクリアン": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "b2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "b5度",
+          "name": "F"
+        },
+        {
+          "degree": "b6度",
+          "name": "G"
         },
         {
           "degree": "b7度",
