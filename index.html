@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tber - スケール辞典（再構築版）</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>Tber スケール辞典 - Fixed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: sans-serif; background: #f0f4f8; padding: 20px; text-align: center; }
-    select { font-size: 1em; margin: 10px; padding: 5px; }
-    table { margin: 20px auto; border-collapse: collapse; }
-    th, td { border: 1px solid #ccc; padding: 8px 14px; background: white; }
-    #description { margin-top: 30px; font-size: 1em; max-width: 800px; margin-left: auto; margin-right: auto; }
+    body{font-family:sans-serif;background:#eef3f8;margin:0;padding:2rem;text-align:center}
+    h1{margin-bottom:1rem}
+    select{font-size:1.1rem;margin:.5rem;padding:.4rem .6rem}
+    table{margin:1.5rem auto;border-collapse:collapse}
+    th,td{border:1px solid #bbb;padding:.5rem 1rem;background:#fff}
+    #description{max-width:800px;margin:1.5rem auto;font-size:1rem;line-height:1.5}
   </style>
 </head>
 <body>
@@ -21,94 +22,73 @@
     <select id="scaleSelect"></select>
   </div>
 
-  <table id="noteTable"></table>
+  <table id="scaleTable"></table>
   <div id="description"></div>
 
-  <script>
-    let scaleData = {};
-    fetch("scales.json")
-      .then(response => response.json())
-      .then(data => {
-        scaleData = data;
-        initSelectors();
-      });
+<script>
+let scaleData={};
 
-    function initSelectors() {
-      const keySelect = document.getElementById("keySelect");
-      const groupSelect = document.getElementById("groupSelect");
-      const scaleSelect = document.getElementById("scaleSelect");
+fetch("scales.json").then(r=>r.json()).then(d=>{
+  scaleData=d;
+  initKeys();
+});
 
-      keySelect.innerHTML = "";
-      Object.keys(scaleData).forEach(key => {
-        const opt = document.createElement("option");
-        opt.value = key;
-        opt.textContent = key;
-        keySelect.appendChild(opt);
-      });
+function initKeys(){
+  const keySel=document.getElementById("keySelect");
+  keySel.innerHTML="";
+  Object.keys(scaleData).forEach(k=>{
+    const opt=document.createElement("option");
+    opt.value=k;opt.textContent=k;
+    keySel.appendChild(opt);
+  });
+  keySel.addEventListener("change",updateGroups);
+  document.getElementById("groupSelect").addEventListener("change",updateScales);
+  document.getElementById("scaleSelect").addEventListener("change",showScale);
+  updateGroups();
+}
 
-      keySelect.addEventListener("change", updateGroups);
-      groupSelect.addEventListener("change", updateScales);
-      scaleSelect.addEventListener("change", showScale);
+function updateGroups(){
+  const key=document.getElementById("keySelect").value;
+  const groups=Object.keys(scaleData[key]);
+  const groupSel=document.getElementById("groupSelect");
+  groupSel.innerHTML="";
+  groups.forEach(g=>{
+    const opt=document.createElement("option");
+    opt.value=g;opt.textContent=g;
+    groupSel.appendChild(opt);
+  });
+  updateScales();
+}
 
-      updateGroups();
-    }
+function updateScales(){
+  const key=document.getElementById("keySelect").value;
+  const group=document.getElementById("groupSelect").value;
+  const scaleSel=document.getElementById("scaleSelect");
+  scaleSel.innerHTML="";
+  if(!scaleData[key][group]) return;
+  Object.keys(scaleData[key][group]).forEach(s=>{
+    const opt=document.createElement("option");
+    opt.value=s;opt.textContent=s;
+    scaleSel.appendChild(opt);
+  });
+  showScale();
+}
 
-    function updateGroups() {
-      const key = document.getElementById("keySelect").value;
-      const groupSelect = document.getElementById("groupSelect");
-      const groups = new Set();
-
-      Object.values(scaleData[key]).forEach(info => {
-        groups.add(info.group || "その他");
-      });
-
-      groupSelect.innerHTML = "";
-      groups.forEach(group => {
-        const opt = document.createElement("option");
-        opt.value = group;
-        opt.textContent = group;
-        groupSelect.appendChild(opt);
-      });
-
-      updateScales();
-    }
-
-    function updateScales() {
-      const key = document.getElementById("keySelect").value;
-      const group = document.getElementById("groupSelect").value;
-      const scaleSelect = document.getElementById("scaleSelect");
-      scaleSelect.innerHTML = "";
-
-      Object.entries(scaleData[key]).forEach(([scaleName, scaleInfo]) => {
-        if (scaleInfo.group === group) {
-          const opt = document.createElement("option");
-          opt.value = scaleName;
-          opt.textContent = scaleName;
-          scaleSelect.appendChild(opt);
-        }
-      });
-
-      showScale();
-    }
-
-    function showScale() {
-      const key = document.getElementById("keySelect").value;
-      const scaleName = document.getElementById("scaleSelect").value;
-      const scale = scaleData[key][scaleName];
-      const noteTable = document.getElementById("noteTable");
-      const description = document.getElementById("description");
-
-      if (!scale) return;
-
-      const degrees = scale.degrees || [];
-      const notes = scale.notes || [];
-
-      noteTable.innerHTML = `
-        <tr>${degrees.map(d => `<th>${d}</th>`).join("")}</tr>
-        <tr>${notes.map(n => `<td>${n}</td>`).join("")}</tr>
-      `;
-      description.textContent = scale.description || "";
-    }
-  </script>
+function showScale(){
+  const key=document.getElementById("keySelect").value;
+  const group=document.getElementById("groupSelect").value;
+  const scale=document.getElementById("scaleSelect").value;
+  const tbl=document.getElementById("scaleTable");
+  const descDiv=document.getElementById("description");
+  if(!scaleData[key][group]||!scaleData[key][group][scale]){tbl.innerHTML="";descDiv.textContent="";return;}
+  const arr=scaleData[key][group][scale]; // array of note objects
+  const degrees=arr.map(o=>o.degree||"");
+  const notes=arr.map(o=>o.name||"");
+  const description=(arr[0]&&arr[0].description)?arr[0].description:"";
+  tbl.innerHTML="<tr>"+degrees.map(d=>`<th>${d}</th>`).join("")+"</tr>"+
+                "<tr>"+notes.map(n=>`<td>${n}</td>`).join("")+"</tr>";
+  descDiv.textContent=description;
+}
+</script>
 </body>
 </html>
