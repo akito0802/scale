@@ -36,7 +36,17 @@ function populateCategories() {
     categorySelect.appendChild(opt);
   });
 
-  categorySelect.value = categories.includes("メジャー") ? "メジャー" : categories[0];
+  // 可能な順で初期値を選ぶ
+  if (categories.includes("メジャー")) {
+    categorySelect.value = "メジャー";
+  } else if (categories.includes("マイナー")) {
+    categorySelect.value = "マイナー";
+  } else if (categories.includes("チャーチ")) {
+    categorySelect.value = "チャーチ";
+  } else {
+    categorySelect.value = categories[0];
+  }
+
   populateScales();
 }
 
