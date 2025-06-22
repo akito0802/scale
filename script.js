@@ -30,13 +30,17 @@ function initSelectors() {
   categorySelect.addEventListener("change", updateScales);
   scaleSelect.addEventListener("change", displayScale);
 
-  updateCategories();
+  if (keys.length > 0) {
+    keySelect.value = keys[0];
+    updateCategories();
+  }
 }
 
 function updateCategories() {
   const selectedKey = keySelect.value;
   categorySelect.innerHTML = "";
   scaleSelect.innerHTML = "";
+
   if (!scaleData[selectedKey]) return;
 
   const categories = Object.keys(scaleData[selectedKey]);
@@ -47,13 +51,17 @@ function updateCategories() {
     categorySelect.appendChild(option);
   });
 
-  updateScales();
+  if (categories.length > 0) {
+    categorySelect.value = categories[0];
+    updateScales();
+  }
 }
 
 function updateScales() {
   const selectedKey = keySelect.value;
   const selectedCategory = categorySelect.value;
   scaleSelect.innerHTML = "";
+
   if (!scaleData[selectedKey] || !scaleData[selectedKey][selectedCategory]) return;
 
   const scales = Object.keys(scaleData[selectedKey][selectedCategory]);
@@ -64,7 +72,10 @@ function updateScales() {
     scaleSelect.appendChild(option);
   });
 
-  displayScale();
+  if (scales.length > 0) {
+    scaleSelect.value = scales[0];
+    displayScale();
+  }
 }
 
 function displayScale() {
@@ -72,7 +83,11 @@ function displayScale() {
   const selectedCategory = categorySelect.value;
   const selectedScale = scaleSelect.value;
 
-  if (!scaleData[selectedKey] || !scaleData[selectedKey][selectedCategory] || !scaleData[selectedKey][selectedCategory][selectedScale]) {
+  if (
+    !scaleData[selectedKey] ||
+    !scaleData[selectedKey][selectedCategory] ||
+    !scaleData[selectedKey][selectedCategory][selectedScale]
+  ) {
     output.textContent = "スケール情報が見つかりません。";
     return;
   }
@@ -81,11 +96,9 @@ function displayScale() {
   output.innerHTML = `<h2>${selectedScale}（キー: ${selectedKey}）</h2>`;
   output.innerHTML += "<ul>" + info.map(note =>
     `<li>${note.degree}度: ${note.note} (${note.description || "説明なし"})</li>`).join("") + "</ul>";
-  results.classList.add("hidden");
-  input.value = "";
 }
 
-// 検索機能（前と同じ）
+// 検索機能
 input.addEventListener("input", () => {
   const query = input.value.trim().toLowerCase();
   results.innerHTML = "";
