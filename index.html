@@ -1,21 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tber - スケール辞典</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    select {
+      font-size: 1.2em;
+      margin: 10px;
+      padding: 5px;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 16px;
+    }
+    #description {
+      margin-top: 30px;
+      font-size: 1.1em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #ffffffaa;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <div class="main-container">
-    <h1>Tber Scale Viewer</h1>
-    <div class="selector-box">
-      <select id="key-select"></select>
-      <select id="category-select"></select>
-      <select id="scale-select"></select>
-    </div>
-    <div id="output" class="output-box"></div>
+  <h1>Tber スケール辞典</h1>
+  <div>
+    <select id="keySelect"></select>
+    <select id="groupSelect"></select>
+    <select id="scaleSelect"></select>
   </div>
-  <script src="main_v12.js"></script>
+
+  <table id="noteTable"></table>
+  <div id="description"></div>
+
+  <script>
+    let scaleData = {};
+    fetch("complete_scales_with_descriptions.json")
+      .then(response => response.json())
+      .then(data => {
+        scaleData = data;
+        populateSelectors();
+      });
+
+    function populateSelectors() {
+      const keySelect = document.getElementById("keySelect");
+      const groupSelect = document.getElementById("groupSelect");
+      const scaleSelect = document.getElementById("scaleSelect");
+
+      keySelect.innerHTML = "";
+      Object.keys(scaleData).forEach(key => {
+        const option = document.createElement("option");
+        option.value = key;
+        option.textContent = key;
+        keySelect.appendChild(option);
+      });
+
+      keySelect.addEventListener("change", updateGroups);
+      groupSelect.addEventListener("change", updateScales);
+      scaleSelect.addEventListener("change", showScale);
+
+      updateGroups();
+    }
+
+    function updateGroups() {
+      const key = document.getElementById("keySelect").value;
+      const groupSelect = document.getElementById("groupSelect");
+      const groupNames = new Set();
+
+      Object.keys(scaleData[key]).forEach(scale => {
+        const group = scaleData[key][scale].group || "その他";
+        groupNames.add(group);
+      });
+
+      groupSelect.innerHTML = "";
+      groupNames.forEach(group => {
+        const option = document.createElement("option");
+        option.value = group;
+        option.textContent = group;
+        groupSelect.appendChild(option);
+      });
+
+      updateScales();
+    }
+
+    function updateScales() {
+      const key = document.getElementById("keySelect").value;
+      const group = document.getElementById("groupSelect").value;
+      const scaleSelect = document.getElementById("scaleSelect");
+      scaleSelect.innerHTML = "";
+
+      Object.keys(scaleData[key]).forEach(scale => {
+        if (scaleData[key][scale].group === group) {
+          const option = document.createElement("option");
+          option.value = scale;
+          option.textContent = scale;
+          scaleSelect.appendChild(option);
+        }
+      });
+
+      showScale();
+    }
+
+    function showScale() {
+      const key = document.getElementById("keySelect").value;
+      const scale = document.getElementById("scaleSelect").value;
+      const noteTable = document.getElementById("noteTable");
+      const descBox = document.getElementById("description");
+
+      const scaleInfo = scaleData[key][scale];
+      if (!scaleInfo) return;
+
+      const notes = scaleInfo.notes || [];
+      const degrees = scaleInfo.degrees || [];
+      const description = scaleInfo.description || "";
+
+      // 表の作成
+      noteTable.innerHTML = "<tr>" + degrees.map(d => `<th>${d}</th>`).join("") + "</tr>" +
+                            "<tr>" + notes.map(n => `<td>${n}</td>`).join("") + "</tr>";
+
+      // 説明文
+      descBox.textContent = description;
+    }
+  </script>
 </body>
 </html>
