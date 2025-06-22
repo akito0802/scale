@@ -29,20 +29,23 @@ function populateCategories() {
   const selectedKey = keySelect.value;
   const categories = Object.keys(scaleData[selectedKey]);
 
-  categories.forEach(cat => {
-    const opt = document.createElement("option");
-    opt.value = cat;
-    opt.textContent = cat;
-    categorySelect.appendChild(opt);
+  const predefinedOrder = ["メジャー", "マイナー", "チャーチ"];
+  predefinedOrder.forEach(cat => {
+    if (categories.includes(cat)) {
+      const opt = document.createElement("option");
+      opt.value = cat;
+      opt.textContent = cat;
+      categorySelect.appendChild(opt);
+    }
   });
 
-  // 可能な順で初期値を選ぶ
-  if (categories.includes("メジャー")) {
+  // 強制的に「チャーチ」を初期表示する
+  if (categories.includes("チャーチ")) {
+    categorySelect.value = "チャーチ";
+  } else if (categories.includes("メジャー")) {
     categorySelect.value = "メジャー";
   } else if (categories.includes("マイナー")) {
     categorySelect.value = "マイナー";
-  } else if (categories.includes("チャーチ")) {
-    categorySelect.value = "チャーチ";
   } else {
     categorySelect.value = categories[0];
   }
@@ -63,7 +66,7 @@ function populateScales() {
     scaleSelect.appendChild(opt);
   });
 
-  scaleSelect.value = scales.includes("メジャー") ? "メジャー" : scales[0];
+  scaleSelect.value = scales.includes("アイオニアン") ? "アイオニアン" : scales[0];
   updateOutput();
 }
 
@@ -83,11 +86,9 @@ function updateOutput() {
 keySelect.addEventListener("change", () => {
   populateCategories();
 });
-
 categorySelect.addEventListener("change", () => {
   populateScales();
 });
-
 scaleSelect.addEventListener("change", () => {
   updateOutput();
 });
