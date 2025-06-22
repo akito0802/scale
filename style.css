@@ -4,3 +4,9 @@ select{margin:0 6px;padding:6px 10px}
 .note-table{border-collapse:collapse;margin-top:15px;width:100%}
 .note-table td{border:1px solid #ccc;padding:4px;text-align:center}
 .note-table tr:first-child td{background:#f0f0f0;font-weight:bold}
+
+.description-box {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+}
