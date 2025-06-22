@@ -9,21 +9,15 @@ fetch("scales.json")
   .then(res => res.json())
   .then(data => {
     scaleData = data;
-    initializeUI();
+    initUI();
   });
 
-function initializeUI() {
-  // キー一覧をセット
+function initUI() {
+  // キー一覧
   keySelect.innerHTML = "";
-  const keys = Object.keys(scaleData);
-  keys.forEach(key => {
-    const opt = document.createElement("option");
-    opt.value = key;
-    opt.textContent = key;
-    keySelect.appendChild(opt);
+  Object.keys(scaleData).forEach(key => {
+    keySelect.insertAdjacentHTML("beforeend", `<option value="${key}">${key}</option>`);
   });
-
-  // 初期選択
   keySelect.value = "C";
 
   populateCategories();
@@ -33,48 +27,39 @@ function populateCategories() {
   categorySelect.innerHTML = "";
   const categories = Object.keys(scaleData[keySelect.value]);
   categories.forEach(cat => {
-    const opt = document.createElement("option");
-    opt.value = cat;
-    opt.textContent = cat;
-    categorySelect.appendChild(opt);
+    categorySelect.insertAdjacentHTML("beforeend", `<option value="${cat}">${cat}</option>`);
   });
-
   categorySelect.value = "メジャー";
+
   populateScales();
 }
 
 function populateScales() {
   scaleSelect.innerHTML = "";
-  const scales = Object.keys(scaleData[keySelect.value][categorySelect.value]);
-  scales.forEach(scl => {
-    const opt = document.createElement("option");
-    opt.value = scl;
-    opt.textContent = scl;
-    scaleSelect.appendChild(opt);
+  const key = keySelect.value;
+  const category = categorySelect.value;
+  const scales = Object.keys(scaleData[key][category]);
+  scales.forEach(name => {
+    scaleSelect.insertAdjacentHTML("beforeend", `<option value="${name}">${name}</option>`);
   });
-
   scaleSelect.value = "メジャー";
+
   updateOutput();
 }
 
 function updateOutput() {
-  const scaleInfo = scaleData[keySelect.value][categorySelect.value][scaleSelect.value];
-  if (!scaleInfo) {
-    output.innerHTML = "構成音が見つかりません。";
-    return;
-  }
-  output.innerHTML = "<strong>構成音：</strong><br>" +
-    scaleInfo.map(note => `${note.degree} (${note.name})`).join(", ");
+  const key = keySelect.value;
+  const category = categorySelect.value;
+  const scaleName = scaleSelect.value;
+  const notes = scaleData[key][category][scaleName];
+  output.innerHTML = "<strong>構成音：</strong><br>" + notes.map(n => `${n.degree} (${n.name})`).join(", ");
 }
 
+// イベント
 keySelect.addEventListener("change", () => {
   populateCategories();
 });
-
 categorySelect.addEventListener("change", () => {
   populateScales();
 });
-
-scaleSelect.addEventListener("change", () => {
-  updateOutput();
-});
+scaleSelect.addEventListener("change", updateOutput);
