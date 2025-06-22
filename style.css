@@ -12,3 +12,19 @@ body {
 .main-container {
   text-align: center;
 }
+#scale-output {
+  margin-top: 20px;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: white;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #eee;
+}

@@ -85,9 +85,11 @@ function showScaleInfo(key, category, scaleName) {
   const output = document.getElementById("scale-output");
   output.innerHTML = `<h2>${scaleName}（キー: ${key}）</h2>`;
 
-  const notes = scale.map(item => {
-    return `<li>${item.degree}度: ${item.note}（${item.description || "説明なし"}）</li>`;
+  let table = `<table><tr><th>度数</th><th>音名</th><th>説明</th></tr>`;
+  table += scale.map(item => {
+    return `<tr><td>${item.degree}</td><td>${item.note}</td><td>${item.description || "説明なし"}</td></tr>`;
   }).join("");
+  table += `</table>`;
 
-  output.innerHTML += `<ul>${notes}</ul>`;
+  output.innerHTML += table;
 }
