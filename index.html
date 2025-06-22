@@ -1,20 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Tber Scale Viewer</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tber - スケール辞典</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="main-container">
-  <h1>Tber Scale Viewer</h1>
-  <label>キー: <select id="key-select"></select></label>
-  <label>分類: <select id="category-select"></select></label>
-  <label>スケール名: <select id="scale-select"></select></label>
-  <div id="output"></div>
-</div>
-<script src="scales.js"></script>
-<script src="main.js"></script>
+  <div class="main-container">
+    <h1>Tber Scale Viewer</h1>
+    <div class="selector-box">
+      <select id="key-select"></select>
+      <select id="category-select"></select>
+      <select id="scale-select"></select>
+    </div>
+    <div id="output" class="output-box"></div>
+  </div>
+  <script src="main_v12.js"></script>
 </body>
 </html>
