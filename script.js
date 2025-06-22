@@ -1,151 +1,91 @@
 
-let scaleData = {};
-const keySelect = document.getElementById("key-select");
-const categorySelect = document.getElementById("category-select");
-const scaleSelect = document.getElementById("scale-select");
-const input = document.getElementById("search-input");
-const results = document.getElementById("search-results");
-const output = document.getElementById("scale-output");
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch("data/scales.json")
     .then((res) => res.json())
     .then((data) => {
-      scaleData = data;
-      console.log("スケールデータ読み込み成功:", data);
-      initSelectors();
-    }).catch((err) => {
-      console.error("スケールデータ読み込みエラー:", err);
+      window.scaleData = data;
+      initializeSelectors();
     });
 });
 
-function initSelectors() {
+function initializeSelectors() {
+  const keySelect = document.getElementById("key-select");
+  const categorySelect = document.getElementById("category-select");
+  const scaleSelect = document.getElementById("scale-select");
+
   keySelect.innerHTML = "";
-  const keys = Object.keys(scaleData);
-  console.log("キー一覧:", keys);
-  keys.forEach((key) => {
+  for (const key in scaleData) {
     const option = document.createElement("option");
     option.value = key;
     option.textContent = key;
     keySelect.appendChild(option);
+  }
+
+  keySelect.addEventListener("change", () => {
+    updateCategorySelector(keySelect.value);
   });
 
-  keySelect.addEventListener("change", updateCategories);
-  categorySelect.addEventListener("change", updateScales);
-  scaleSelect.addEventListener("change", displayScale);
+  categorySelect.addEventListener("change", () => {
+    updateScaleSelector(keySelect.value, categorySelect.value);
+  });
 
-  if (keys.length > 0) {
-    keySelect.value = keys[0];
-    updateCategories();
+  scaleSelect.addEventListener("change", () => {
+    showScaleInfo(keySelect.value, categorySelect.value, scaleSelect.value);
+  });
+
+  // 初期化用に1回ずつ呼ぶ
+  if (keySelect.options.length > 0) {
+    keySelect.selectedIndex = 0;
+    updateCategorySelector(keySelect.value);
   }
 }
 
-function updateCategories() {
-  const selectedKey = keySelect.value;
+function updateCategorySelector(selectedKey) {
+  const categorySelect = document.getElementById("category-select");
+  const scaleSelect = document.getElementById("scale-select");
   categorySelect.innerHTML = "";
   scaleSelect.innerHTML = "";
 
-  if (!scaleData[selectedKey]) return;
-
   const categories = Object.keys(scaleData[selectedKey]);
-  console.log("分類一覧:", categories);
-  categories.forEach((category) => {
+  for (const category of categories) {
     const option = document.createElement("option");
     option.value = category;
     option.textContent = category;
     categorySelect.appendChild(option);
-  });
+  }
 
   if (categories.length > 0) {
-    categorySelect.value = categories[0];
-    updateScales();
+    categorySelect.selectedIndex = 0;
+    updateScaleSelector(selectedKey, categorySelect.value);
   }
 }
 
-function updateScales() {
-  const selectedKey = keySelect.value;
-  const selectedCategory = categorySelect.value;
+function updateScaleSelector(selectedKey, selectedCategory) {
+  const scaleSelect = document.getElementById("scale-select");
   scaleSelect.innerHTML = "";
 
-  if (!scaleData[selectedKey] || !scaleData[selectedKey][selectedCategory]) return;
-
   const scales = Object.keys(scaleData[selectedKey][selectedCategory]);
-  console.log("スケール名一覧:", scales);
-  scales.forEach((name) => {
+  for (const scale of scales) {
     const option = document.createElement("option");
-    option.value = name;
-    option.textContent = name;
+    option.value = scale;
+    option.textContent = scale;
     scaleSelect.appendChild(option);
-  });
+  }
 
   if (scales.length > 0) {
-    scaleSelect.value = scales[0];
-    displayScale();
+    scaleSelect.selectedIndex = 0;
+    showScaleInfo(selectedKey, selectedCategory, scaleSelect.value);
   }
 }
 
-function displayScale() {
-  const selectedKey = keySelect.value;
-  const selectedCategory = categorySelect.value;
-  const selectedScale = scaleSelect.value;
+function showScaleInfo(key, category, scaleName) {
+  const scale = scaleData[key][category][scaleName];
+  const output = document.getElementById("scale-output");
+  output.innerHTML = `<h2>${scaleName}（キー: ${key}）</h2>`;
 
-  if (
-    !scaleData[selectedKey] ||
-    !scaleData[selectedKey][selectedCategory] ||
-    !scaleData[selectedKey][selectedCategory][selectedScale]
-  ) {
-    output.textContent = "スケール情報が見つかりません。";
-    return;
-  }
+  const notes = scale.map(item => {
+    return `<li>${item.degree}度: ${item.note}（${item.description || "説明なし"}）</li>`;
+  }).join("");
 
-  const info = scaleData[selectedKey][selectedCategory][selectedScale];
-  output.innerHTML = `<h2>${selectedScale}（キー: ${selectedKey}）</h2>`;
-  output.innerHTML += "<ul>" + info.map(note =>
-    `<li>${note.degree}度: ${note.note} (${note.description || "説明なし"})</li>`).join("") + "</ul>";
+  output.innerHTML += `<ul>${notes}</ul>`;
 }
-
-// 検索機能
-input.addEventListener("input", () => {
-  const query = input.value.trim().toLowerCase();
-  results.innerHTML = "";
-
-  if (query === "") {
-    results.classList.add("hidden");
-    return;
-  }
-
-  let matches = [];
-
-  for (const key in scaleData) {
-    const categories = scaleData[key];
-    for (const category in categories) {
-      const scales = categories[category];
-      for (const name in scales) {
-        if (name.toLowerCase().includes(query)) {
-          matches.push({ name, category, key });
-        }
-      }
-    }
-  }
-
-  if (matches.length === 0) {
-    results.classList.add("hidden");
-    return;
-  }
-
-  results.classList.remove("hidden");
-
-  matches.forEach((match) => {
-    const li = document.createElement("li");
-    li.textContent = `[${match.key}] ${match.name}`;
-    li.addEventListener("click", () => {
-      const info = scaleData[match.key][match.category][match.name];
-      output.innerHTML = `<h2>${match.name}（キー: ${match.key}）</h2>`;
-      output.innerHTML += "<ul>" + info.map(note =>
-        `<li>${note.degree}度: ${note.note} (${note.description || "説明なし"})</li>`).join("") + "</ul>";
-      results.classList.add("hidden");
-      input.value = "";
-    });
-    results.appendChild(li);
-  });
-});
