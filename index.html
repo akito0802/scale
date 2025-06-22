@@ -3,14 +3,14 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+  <title>Tber - スケール辞典（再構築版）</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tber - スケール辞典</title>
   <style>
-    body { font-family: sans-serif; background: #f8f9fa; text-align: center; padding: 20px; }
-    select { font-size: 1.2em; margin: 10px; padding: 5px; }
+    body { font-family: sans-serif; background: #f0f4f8; padding: 20px; text-align: center; }
+    select { font-size: 1em; margin: 10px; padding: 5px; }
     table { margin: 20px auto; border-collapse: collapse; }
-    th, td { border: 1px solid #ccc; padding: 8px 16px; }
-    #description { margin-top: 30px; font-size: 1.1em; max-width: 700px; margin-left: auto; margin-right: auto; }
+    th, td { border: 1px solid #ccc; padding: 8px 14px; background: white; }
+    #description { margin-top: 30px; font-size: 1em; max-width: 800px; margin-left: auto; margin-right: auto; }
   </style>
 </head>
 <body>
@@ -30,20 +30,20 @@
       .then(response => response.json())
       .then(data => {
         scaleData = data;
-        populateSelectors();
+        initSelectors();
       });
 
-    function populateSelectors() {
+    function initSelectors() {
       const keySelect = document.getElementById("keySelect");
       const groupSelect = document.getElementById("groupSelect");
       const scaleSelect = document.getElementById("scaleSelect");
 
       keySelect.innerHTML = "";
       Object.keys(scaleData).forEach(key => {
-        const option = document.createElement("option");
-        option.value = key;
-        option.textContent = key;
-        keySelect.appendChild(option);
+        const opt = document.createElement("option");
+        opt.value = key;
+        opt.textContent = key;
+        keySelect.appendChild(opt);
       });
 
       keySelect.addEventListener("change", updateGroups);
@@ -56,19 +56,18 @@
     function updateGroups() {
       const key = document.getElementById("keySelect").value;
       const groupSelect = document.getElementById("groupSelect");
-      const groupNames = new Set();
+      const groups = new Set();
 
-      Object.keys(scaleData[key]).forEach(scale => {
-        const group = scaleData[key][scale].group || "その他";
-        groupNames.add(group);
+      Object.values(scaleData[key]).forEach(info => {
+        groups.add(info.group || "その他");
       });
 
       groupSelect.innerHTML = "";
-      groupNames.forEach(group => {
-        const option = document.createElement("option");
-        option.value = group;
-        option.textContent = group;
-        groupSelect.appendChild(option);
+      groups.forEach(group => {
+        const opt = document.createElement("option");
+        opt.value = group;
+        opt.textContent = group;
+        groupSelect.appendChild(opt);
       });
 
       updateScales();
@@ -80,12 +79,12 @@
       const scaleSelect = document.getElementById("scaleSelect");
       scaleSelect.innerHTML = "";
 
-      Object.keys(scaleData[key]).forEach(scale => {
-        if (scaleData[key][scale].group === group) {
-          const option = document.createElement("option");
-          option.value = scale;
-          option.textContent = scale;
-          scaleSelect.appendChild(option);
+      Object.entries(scaleData[key]).forEach(([scaleName, scaleInfo]) => {
+        if (scaleInfo.group === group) {
+          const opt = document.createElement("option");
+          opt.value = scaleName;
+          opt.textContent = scaleName;
+          scaleSelect.appendChild(opt);
         }
       });
 
@@ -94,21 +93,21 @@
 
     function showScale() {
       const key = document.getElementById("keySelect").value;
-      const scale = document.getElementById("scaleSelect").value;
+      const scaleName = document.getElementById("scaleSelect").value;
+      const scale = scaleData[key][scaleName];
       const noteTable = document.getElementById("noteTable");
-      const descBox = document.getElementById("description");
+      const description = document.getElementById("description");
 
-      const scaleInfo = scaleData[key][scale];
-      if (!scaleInfo) return;
+      if (!scale) return;
 
-      const notes = scaleInfo.notes || [];
-      const degrees = scaleInfo.degrees || [];
-      const description = scaleInfo.description || "";
+      const degrees = scale.degrees || [];
+      const notes = scale.notes || [];
 
-      noteTable.innerHTML = "<tr>" + degrees.map(d => `<th>${d}</th>`).join("") + "</tr>" +
-                            "<tr>" + notes.map(n => `<td>${n}</td>`).join("") + "</tr>";
-
-      descBox.textContent = description;
+      noteTable.innerHTML = `
+        <tr>${degrees.map(d => `<th>${d}</th>`).join("")}</tr>
+        <tr>${notes.map(n => `<td>${n}</td>`).join("")}</tr>
+      `;
+      description.textContent = scale.description || "";
     }
   </script>
 </body>
