@@ -12,13 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((res) => res.json())
     .then((data) => {
       scaleData = data;
+      console.log("スケールデータ読み込み成功:", data);
       initSelectors();
+    }).catch((err) => {
+      console.error("スケールデータ読み込みエラー:", err);
     });
 });
 
 function initSelectors() {
   keySelect.innerHTML = "";
   const keys = Object.keys(scaleData);
+  console.log("キー一覧:", keys);
   keys.forEach((key) => {
     const option = document.createElement("option");
     option.value = key;
@@ -44,6 +48,7 @@ function updateCategories() {
   if (!scaleData[selectedKey]) return;
 
   const categories = Object.keys(scaleData[selectedKey]);
+  console.log("分類一覧:", categories);
   categories.forEach((category) => {
     const option = document.createElement("option");
     option.value = category;
@@ -65,6 +70,7 @@ function updateScales() {
   if (!scaleData[selectedKey] || !scaleData[selectedKey][selectedCategory]) return;
 
   const scales = Object.keys(scaleData[selectedKey][selectedCategory]);
+  console.log("スケール名一覧:", scales);
   scales.forEach((name) => {
     const option = document.createElement("option");
     option.value = name;
