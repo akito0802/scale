@@ -6,36 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tber - スケール辞典</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    select {
-      font-size: 1.2em;
-      margin: 10px;
-      padding: 5px;
-    }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px 16px;
-    }
-    #description {
-      margin-top: 30px;
-      font-size: 1.1em;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      background: #ffffffaa;
-      padding: 15px;
-      border-radius: 10px;
-    }
+    body { font-family: sans-serif; background: #f8f9fa; text-align: center; padding: 20px; }
+    select { font-size: 1.2em; margin: 10px; padding: 5px; }
+    table { margin: 20px auto; border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px 16px; }
+    #description { margin-top: 30px; font-size: 1.1em; max-width: 700px; margin-left: auto; margin-right: auto; }
   </style>
 </head>
 <body>
@@ -51,7 +26,7 @@
 
   <script>
     let scaleData = {};
-    fetch("complete_scales_with_descriptions.json")
+    fetch("scales.json")
       .then(response => response.json())
       .then(data => {
         scaleData = data;
@@ -130,11 +105,9 @@
       const degrees = scaleInfo.degrees || [];
       const description = scaleInfo.description || "";
 
-      // 表の作成
       noteTable.innerHTML = "<tr>" + degrees.map(d => `<th>${d}</th>`).join("") + "</tr>" +
                             "<tr>" + notes.map(n => `<td>${n}</td>`).join("") + "</tr>";
 
-      // 説明文
       descBox.textContent = description;
     }
   </script>
