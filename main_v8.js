@@ -1,4 +1,4 @@
-// v8: hard‑coded categories list ensures "ブルース" always appears.
+// v9: CATEGORIES 明示定義でジャズ・ブルース強制表示
 const CATEGORIES = ["メジャー","マイナー","チャーチ","ジャズ","ブルース"];
 
 const keySel = document.getElementById("key-select");
@@ -13,7 +13,6 @@ fetch("scales.json")
   .then(j=>{data=j;init();});
 
 function init(){
-  // keys
   keySel.innerHTML="";
   Object.keys(data).forEach(k=>keySel.insertAdjacentHTML("beforeend",`<option value="${k}">${k}</option>`));
   keySel.value="C";
@@ -28,7 +27,6 @@ function populateCategories(){
     catSel.insertAdjacentHTML("beforeend",
       `<option value="${c}" ${exists?"":"disabled"}>${c}${exists?"":"(なし)"}</option>`);
   });
-  // select first available
   catSel.value=CATEGORIES.find(c=>key.hasOwnProperty(c));
   populateScales();
 }
