@@ -1049,6 +1049,158 @@
           "name": "B"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "#4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "#4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "#4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "A#"
+        }
+      ]
     }
   },
   "C#": {
@@ -2099,6 +2251,158 @@
         {
           "degree": "7度",
           "name": "C"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "#4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "#4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "#4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "B"
         }
       ]
     }
@@ -3153,6 +3457,158 @@
           "name": "C#"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "#4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "#4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "#4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "b7度",
+          "name": "C"
+        }
+      ]
     }
   },
   "D#": {
@@ -4203,6 +4659,158 @@
         {
           "degree": "7度",
           "name": "D"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "#4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "#4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "#4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "b7度",
+          "name": "C#"
         }
       ]
     }
@@ -5257,6 +5865,158 @@
           "name": "D#"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "#4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "#4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "#4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "b7度",
+          "name": "D"
+        }
+      ]
     }
   },
   "F": {
@@ -6307,6 +7067,158 @@
         {
           "degree": "7度",
           "name": "E"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "#4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "#4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "#4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "b7度",
+          "name": "D#"
         }
       ]
     }
@@ -7361,6 +8273,158 @@
           "name": "F"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "#4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "#4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "#4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "b7度",
+          "name": "E"
+        }
+      ]
     }
   },
   "G": {
@@ -8411,6 +9475,158 @@
         {
           "degree": "7度",
           "name": "F#"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "#4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "#4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "#4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "b7度",
+          "name": "F"
         }
       ]
     }
@@ -9465,6 +10681,158 @@
           "name": "G"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "#4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "#4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "#4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "b7度",
+          "name": "F#"
+        }
+      ]
     }
   },
   "A": {
@@ -10515,6 +11883,158 @@
         {
           "degree": "7度",
           "name": "G#"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "#4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "#4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "#4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "b7度",
+          "name": "G"
         }
       ]
     }
@@ -11569,6 +13089,158 @@
           "name": "A"
         }
       ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "#4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "#4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "#4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "b7度",
+          "name": "G#"
+        }
+      ]
     }
   },
   "B": {
@@ -12619,6 +14291,158 @@
         {
           "degree": "7度",
           "name": "A#"
+        }
+      ]
+    },
+    "ブルース": {
+      "マイナーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "#4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "メジャーブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        }
+      ],
+      "ハイブリッドブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "#4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "コンビネーションブルース": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
+        }
+      ],
+      "6音ブルーススケール": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "#4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "b7度",
+          "name": "A"
         }
       ]
     }
