@@ -2,21 +2,27 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tber - Scale Viewer</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tber - スケール辞典</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Tber スケール構成音</h1>
-    <div class="selectors">
+  <div class="main-container">
+    <h1>Tber Scale Viewer</h1>
+    <div class="selector-box">
+      <label>キー</label>
       <select id="key-select"></select>
+
+      <label>分類</label>
       <select id="category-select"></select>
+
+      <label>スケール名</label>
       <select id="scale-select"></select>
     </div>
+
     <div id="output" class="output-box"></div>
   </div>
-  <!-- キャッシュ回避のため v8 -->
-  <script src="main_v8.js"></script>
+
+  <script src="main_v10.js"></script>
 </body>
 </html>
