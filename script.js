@@ -7,14 +7,17 @@ const input = document.getElementById("search-input");
 const results = document.getElementById("search-results");
 const output = document.getElementById("scale-output");
 
-fetch("data/scales.json")
-  .then((res) => res.json())
-  .then((data) => {
-    scaleData = data;
-    initSelectors();
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/scales.json")
+    .then((res) => res.json())
+    .then((data) => {
+      scaleData = data;
+      initSelectors();
+    });
+});
 
 function initSelectors() {
+  keySelect.innerHTML = "";
   const keys = Object.keys(scaleData);
   keys.forEach((key) => {
     const option = document.createElement("option");
