@@ -1541,62 +1541,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "C"
+          "name": "C",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D"
+          "name": "D",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "E"
+          "name": "E",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F#"
+          "name": "F#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G"
+          "name": "G",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "G#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "B"
+          "name": "B",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "C"
+          "name": "C",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D"
+          "name": "D",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "D#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F#"
+          "name": "F#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G"
+          "name": "G",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "G#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "A#",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -1645,24 +1645,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "C"
+          "name": "C",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D"
+          "name": "D",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "D#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G"
+          "name": "G",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A"
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        },
+        {
+          "name": "G#",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "C",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
         }
       ]
     }
@@ -3209,62 +3697,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "C#"
+          "name": "C#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D#"
+          "name": "D#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "F"
+          "name": "F",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G"
+          "name": "G",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G#"
+          "name": "G#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "A",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "C"
+          "name": "C",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "C#"
+          "name": "C#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D#"
+          "name": "D#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "E",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G"
+          "name": "G",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G#"
+          "name": "G#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "A",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "B",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -3313,24 +3801,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "C#"
+          "name": "C#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "D#"
+          "name": "D#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "E",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G#"
+          "name": "G#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A#"
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        },
+        {
+          "name": "A",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "C#",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
         }
       ]
     }
@@ -4877,62 +5853,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "D"
+          "name": "D",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "E"
+          "name": "E",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "F#"
+          "name": "F#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G#"
+          "name": "G#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A"
+          "name": "A",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "A#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "C#"
+          "name": "C#",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "D"
+          "name": "D",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "E"
+          "name": "E",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "F",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "G#"
+          "name": "G#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A"
+          "name": "A",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "A#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "C",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -4981,24 +5957,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "D"
+          "name": "D",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "E"
+          "name": "E",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "F",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A"
+          "name": "A",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "B"
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        },
+        {
+          "name": "A#",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "D#",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "D",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
         }
       ]
     }
@@ -6545,62 +8009,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "D#"
+          "name": "D#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F"
+          "name": "F",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "G"
+          "name": "G",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A"
+          "name": "A",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A#"
+          "name": "A#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "B",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "D"
+          "name": "D",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "D#"
+          "name": "D#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F"
+          "name": "F",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "F#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A"
+          "name": "A",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "A#"
+          "name": "A#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "B",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "C#",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -6649,24 +8113,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "D#"
+          "name": "D#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F"
+          "name": "F",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "F#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A#"
+          "name": "A#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C"
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        },
+        {
+          "name": "B",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "E",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "D#",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
         }
       ]
     }
@@ -8213,62 +10165,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "E"
+          "name": "E",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F#"
+          "name": "F#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "G#"
+          "name": "G#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A#"
+          "name": "A#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "B"
+          "name": "B",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "C",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "D#"
+          "name": "D#",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "E"
+          "name": "E",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F#"
+          "name": "F#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "G",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "A#"
+          "name": "A#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "B"
+          "name": "B",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "C",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "D",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -8317,24 +10269,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "E"
+          "name": "E",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "F#"
+          "name": "F#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "G",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "B"
+          "name": "B",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C#"
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "F#",
+          "degree": "3"
+        },
+        {
+          "name": "G",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        },
+        {
+          "name": "A",
+          "degree": "6"
+        },
+        {
+          "name": "B",
+          "degree": "7"
+        },
+        {
+          "name": "C",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "E",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
         }
       ]
     }
@@ -9881,62 +12321,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "F"
+          "name": "F",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G"
+          "name": "G",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "A"
+          "name": "A",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "B"
+          "name": "B",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C"
+          "name": "C",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "C#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "E"
+          "name": "E",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "F"
+          "name": "F",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G"
+          "name": "G",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "G#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "B"
+          "name": "B",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C"
+          "name": "C",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "C#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "D#",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -9985,24 +12425,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "F"
+          "name": "F",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G"
+          "name": "G",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "G#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C"
+          "name": "C",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D"
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G",
+          "degree": "3"
+        },
+        {
+          "name": "G#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        },
+        {
+          "name": "A#",
+          "degree": "6"
+        },
+        {
+          "name": "C",
+          "degree": "7"
+        },
+        {
+          "name": "C#",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "F#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "F",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
         }
       ]
     }
@@ -11549,62 +14477,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "F#"
+          "name": "F#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G#"
+          "name": "G#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "A#"
+          "name": "A#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C"
+          "name": "C",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C#"
+          "name": "C#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "D",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "F"
+          "name": "F",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "F#"
+          "name": "F#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G#"
+          "name": "G#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "A",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C"
+          "name": "C",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "C#"
+          "name": "C#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "D",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "E",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -11653,24 +14581,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "F#"
+          "name": "F#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "G#"
+          "name": "G#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "A",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C#"
+          "name": "C#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D#"
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "G#",
+          "degree": "3"
+        },
+        {
+          "name": "A",
+          "degree": "4"
+        },
+        {
+          "name": "A#",
+          "degree": "5"
+        },
+        {
+          "name": "B",
+          "degree": "6"
+        },
+        {
+          "name": "C#",
+          "degree": "7"
+        },
+        {
+          "name": "D",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "F#",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
         }
       ]
     }
@@ -13217,62 +16633,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "G"
+          "name": "G",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A"
+          "name": "A",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "B"
+          "name": "B",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C#"
+          "name": "C#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D"
+          "name": "D",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "D#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "F#"
+          "name": "F#",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "G"
+          "name": "G",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A"
+          "name": "A",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "A#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "C#"
+          "name": "C#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D"
+          "name": "D",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "D#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "F",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -13321,24 +16737,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "G"
+          "name": "G",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A"
+          "name": "A",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "A#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D"
+          "name": "D",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "E"
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A",
+          "degree": "3"
+        },
+        {
+          "name": "A#",
+          "degree": "4"
+        },
+        {
+          "name": "B",
+          "degree": "5"
+        },
+        {
+          "name": "C",
+          "degree": "6"
+        },
+        {
+          "name": "D",
+          "degree": "7"
+        },
+        {
+          "name": "D#",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "G#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "G",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
         }
       ]
     }
@@ -14885,62 +18789,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "G#"
+          "name": "G#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A#"
+          "name": "A#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "C"
+          "name": "C",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D"
+          "name": "D",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D#"
+          "name": "D#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "E",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "G"
+          "name": "G",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "G#"
+          "name": "G#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A#"
+          "name": "A#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "B",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D"
+          "name": "D",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "D#"
+          "name": "D#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "E",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "F#",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -14989,24 +18893,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "G#"
+          "name": "G#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "A#"
+          "name": "A#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "B",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D#"
+          "name": "D#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F"
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "A#",
+          "degree": "3"
+        },
+        {
+          "name": "B",
+          "degree": "4"
+        },
+        {
+          "name": "C",
+          "degree": "5"
+        },
+        {
+          "name": "C#",
+          "degree": "6"
+        },
+        {
+          "name": "D#",
+          "degree": "7"
+        },
+        {
+          "name": "E",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "G#",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
         }
       ]
     }
@@ -16553,62 +20945,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "A"
+          "name": "A",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "B"
+          "name": "B",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "C#"
+          "name": "C#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D#"
+          "name": "D#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "E"
+          "name": "E",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "F",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "G#"
+          "name": "G#",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "A"
+          "name": "A",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "B"
+          "name": "B",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "C",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "D#"
+          "name": "D#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "E"
+          "name": "E",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "F",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "G",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -16657,24 +21049,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "A"
+          "name": "A",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "B"
+          "name": "B",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "C",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "E"
+          "name": "E",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F#"
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "B",
+          "degree": "3"
+        },
+        {
+          "name": "C",
+          "degree": "4"
+        },
+        {
+          "name": "C#",
+          "degree": "5"
+        },
+        {
+          "name": "D",
+          "degree": "6"
+        },
+        {
+          "name": "E",
+          "degree": "7"
+        },
+        {
+          "name": "F",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "A#",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "A",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
         }
       ]
     }
@@ -18221,62 +23101,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "A#"
+          "name": "A#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C"
+          "name": "C",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "D"
+          "name": "D",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "E"
+          "name": "E",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F"
+          "name": "F",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "F#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "A"
+          "name": "A",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "A#"
+          "name": "A#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C"
+          "name": "C",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "C#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "E"
+          "name": "E",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F"
+          "name": "F",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "F#",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "G#",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -18325,24 +23205,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "A#"
+          "name": "A#",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C"
+          "name": "C",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "C#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F"
+          "name": "F",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G"
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "E",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C",
+          "degree": "3"
+        },
+        {
+          "name": "C#",
+          "degree": "4"
+        },
+        {
+          "name": "D",
+          "degree": "5"
+        },
+        {
+          "name": "D#",
+          "degree": "6"
+        },
+        {
+          "name": "F",
+          "degree": "7"
+        },
+        {
+          "name": "F#",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "B",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "D#",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "F#",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "G#",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "A#",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "G",
+          "degree": "5"
         }
       ]
     }
@@ -19889,62 +25257,62 @@
       ],
       "ジプシーメジャー": [
         {
-          "degree": "1",
-          "name": "B"
+          "name": "B",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C#"
+          "name": "C#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "D#"
+          "name": "D#",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F"
+          "name": "F",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F#"
+          "name": "F#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "G",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "A#"
+          "name": "A#",
+          "degree": "7"
         }
       ],
       "ジプシーマイナー": [
         {
-          "degree": "1",
-          "name": "B"
+          "name": "B",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C#"
+          "name": "C#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "D",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F"
+          "name": "F",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "F#"
+          "name": "F#",
+          "degree": "5"
         },
         {
-          "degree": "6",
-          "name": "Ab"
+          "name": "G",
+          "degree": "6"
         },
         {
-          "degree": "7",
-          "name": "Bb"
+          "name": "A",
+          "degree": "7"
         }
       ],
       "ケルト音階": [
@@ -19993,24 +25361,512 @@
       ],
       "クンビアスケール": [
         {
-          "degree": "1",
-          "name": "B"
+          "name": "B",
+          "degree": "1"
         },
         {
-          "degree": "2",
-          "name": "C#"
+          "name": "C#",
+          "degree": "2"
         },
         {
-          "degree": "3",
-          "name": "Eb"
+          "name": "D",
+          "degree": "3"
         },
         {
-          "degree": "4",
-          "name": "F#"
+          "name": "F#",
+          "degree": "4"
         },
         {
-          "degree": "5",
-          "name": "G#"
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "マカーム・ナハワンド": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "マカーム・バヤティ": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "マカーム・サバー": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "マカーム・ヒジャーズカル": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "アラビック八音音階": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "C#",
+          "degree": "3"
+        },
+        {
+          "name": "D",
+          "degree": "4"
+        },
+        {
+          "name": "D#",
+          "degree": "5"
+        },
+        {
+          "name": "E",
+          "degree": "6"
+        },
+        {
+          "name": "F#",
+          "degree": "7"
+        },
+        {
+          "name": "G",
+          "degree": "8"
+        }
+      ],
+      "ロクリアン♯6": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "ラガ・トーディ": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "ラガ・ヤマン": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "カルナーティックスケール": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A#",
+          "degree": "7"
+        }
+      ],
+      "中国古典ペンタ": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "中華ブルース": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "アリラン音階": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "フラメンコスケール": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C",
+          "degree": "2"
+        },
+        {
+          "name": "D#",
+          "degree": "3"
+        },
+        {
+          "name": "E",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "スパニッシュ・ドリアン": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F",
+          "degree": "4"
+        },
+        {
+          "name": "F#",
+          "degree": "5"
+        },
+        {
+          "name": "G#",
+          "degree": "6"
+        },
+        {
+          "name": "A",
+          "degree": "7"
+        }
+      ],
+      "ボサノバマイナー": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "D",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
+        }
+      ],
+      "ネイティブアメリカンスケール": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "アフリカンマイナー": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "D",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "A",
+          "degree": "5"
+        }
+      ],
+      "ピグミースケール": [
+        {
+          "name": "B",
+          "degree": "1"
+        },
+        {
+          "name": "C#",
+          "degree": "2"
+        },
+        {
+          "name": "E",
+          "degree": "3"
+        },
+        {
+          "name": "F#",
+          "degree": "4"
+        },
+        {
+          "name": "G#",
+          "degree": "5"
         }
       ]
     }
