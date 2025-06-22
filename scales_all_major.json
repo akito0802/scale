@@ -1,0 +1,986 @@
+{
+  "C": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "4度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        },
+        {
+          "degree": "7度",
+          "name": "B"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "C"
+        },
+        {
+          "degree": "2度",
+          "name": "D"
+        },
+        {
+          "degree": "b3度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "G"
+        },
+        {
+          "degree": "6度",
+          "name": "A"
+        }
+      ]
+    }
+  },
+  "C#": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "4度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        },
+        {
+          "degree": "7度",
+          "name": "C"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "C#"
+        },
+        {
+          "degree": "2度",
+          "name": "D#"
+        },
+        {
+          "degree": "b3度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F"
+        },
+        {
+          "degree": "5度",
+          "name": "G#"
+        },
+        {
+          "degree": "6度",
+          "name": "A#"
+        }
+      ]
+    }
+  },
+  "D": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "4度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        },
+        {
+          "degree": "7度",
+          "name": "C#"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "D"
+        },
+        {
+          "degree": "2度",
+          "name": "E"
+        },
+        {
+          "degree": "b3度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "F#"
+        },
+        {
+          "degree": "5度",
+          "name": "A"
+        },
+        {
+          "degree": "6度",
+          "name": "B"
+        }
+      ]
+    }
+  },
+  "D#": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "4度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        },
+        {
+          "degree": "7度",
+          "name": "D"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "D#"
+        },
+        {
+          "degree": "2度",
+          "name": "F"
+        },
+        {
+          "degree": "b3度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G"
+        },
+        {
+          "degree": "5度",
+          "name": "A#"
+        },
+        {
+          "degree": "6度",
+          "name": "C"
+        }
+      ]
+    }
+  },
+  "E": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "4度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        },
+        {
+          "degree": "7度",
+          "name": "D#"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "E"
+        },
+        {
+          "degree": "2度",
+          "name": "F#"
+        },
+        {
+          "degree": "b3度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "G#"
+        },
+        {
+          "degree": "5度",
+          "name": "B"
+        },
+        {
+          "degree": "6度",
+          "name": "C#"
+        }
+      ]
+    }
+  },
+  "F": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "4度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        },
+        {
+          "degree": "7度",
+          "name": "E"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "F"
+        },
+        {
+          "degree": "2度",
+          "name": "G"
+        },
+        {
+          "degree": "b3度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A"
+        },
+        {
+          "degree": "5度",
+          "name": "C"
+        },
+        {
+          "degree": "6度",
+          "name": "D"
+        }
+      ]
+    }
+  },
+  "F#": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "4度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        },
+        {
+          "degree": "7度",
+          "name": "F"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "F#"
+        },
+        {
+          "degree": "2度",
+          "name": "G#"
+        },
+        {
+          "degree": "b3度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "A#"
+        },
+        {
+          "degree": "5度",
+          "name": "C#"
+        },
+        {
+          "degree": "6度",
+          "name": "D#"
+        }
+      ]
+    }
+  },
+  "G": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "4度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        },
+        {
+          "degree": "7度",
+          "name": "F#"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "G"
+        },
+        {
+          "degree": "2度",
+          "name": "A"
+        },
+        {
+          "degree": "b3度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "B"
+        },
+        {
+          "degree": "5度",
+          "name": "D"
+        },
+        {
+          "degree": "6度",
+          "name": "E"
+        }
+      ]
+    }
+  },
+  "G#": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "4度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        },
+        {
+          "degree": "7度",
+          "name": "G"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "G#"
+        },
+        {
+          "degree": "2度",
+          "name": "A#"
+        },
+        {
+          "degree": "b3度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C"
+        },
+        {
+          "degree": "5度",
+          "name": "D#"
+        },
+        {
+          "degree": "6度",
+          "name": "F"
+        }
+      ]
+    }
+  },
+  "A": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "4度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        },
+        {
+          "degree": "7度",
+          "name": "G#"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "A"
+        },
+        {
+          "degree": "2度",
+          "name": "B"
+        },
+        {
+          "degree": "b3度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "C#"
+        },
+        {
+          "degree": "5度",
+          "name": "E"
+        },
+        {
+          "degree": "6度",
+          "name": "F#"
+        }
+      ]
+    }
+  },
+  "A#": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "4度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        },
+        {
+          "degree": "7度",
+          "name": "A"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "A#"
+        },
+        {
+          "degree": "2度",
+          "name": "C"
+        },
+        {
+          "degree": "b3度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D"
+        },
+        {
+          "degree": "5度",
+          "name": "F"
+        },
+        {
+          "degree": "6度",
+          "name": "G"
+        }
+      ]
+    }
+  },
+  "B": {
+    "メジャー": {
+      "メジャー": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "4度",
+          "name": "E"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        },
+        {
+          "degree": "7度",
+          "name": "A#"
+        }
+      ],
+      "ペンタトニック": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        }
+      ],
+      "ブルース": [
+        {
+          "degree": "1度",
+          "name": "B"
+        },
+        {
+          "degree": "2度",
+          "name": "C#"
+        },
+        {
+          "degree": "b3度",
+          "name": "D"
+        },
+        {
+          "degree": "3度",
+          "name": "D#"
+        },
+        {
+          "degree": "5度",
+          "name": "F#"
+        },
+        {
+          "degree": "6度",
+          "name": "G#"
+        }
+      ]
+    }
+  }
+}
