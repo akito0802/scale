@@ -1048,6 +1048,164 @@
           "degree": "7度",
           "name": "B"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "C"
+        },
+        {
+          "degree": "2",
+          "name": "D"
+        },
+        {
+          "degree": "3",
+          "name": "E"
+        },
+        {
+          "degree": "4",
+          "name": "F"
+        },
+        {
+          "degree": "5",
+          "name": "G"
+        },
+        {
+          "degree": "6",
+          "name": "A"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "B"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "C"
+        },
+        {
+          "degree": "2",
+          "name": "D"
+        },
+        {
+          "degree": "3",
+          "name": "E"
+        },
+        {
+          "degree": "4",
+          "name": "F"
+        },
+        {
+          "degree": "5",
+          "name": "G"
+        },
+        {
+          "degree": "6",
+          "name": "G#"
+        },
+        {
+          "degree": "7",
+          "name": "A"
+        },
+        {
+          "degree": "8",
+          "name": "B"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "C"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "E"
+        },
+        {
+          "degree": "5",
+          "name": "F#"
+        },
+        {
+          "degree": "6",
+          "name": "G"
+        },
+        {
+          "degree": "7",
+          "name": "A"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "C"
+        },
+        {
+          "degree": "2",
+          "name": "D"
+        },
+        {
+          "degree": "3",
+          "name": "E"
+        },
+        {
+          "degree": "4",
+          "name": "F#"
+        },
+        {
+          "degree": "5",
+          "name": "G#"
+        },
+        {
+          "degree": "6",
+          "name": "A#"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "C"
+        },
+        {
+          "degree": "2",
+          "name": "D"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "E"
+        },
+        {
+          "degree": "5",
+          "name": "G"
+        },
+        {
+          "degree": "6",
+          "name": "A"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -2251,6 +2409,164 @@
         {
           "degree": "7度",
           "name": "C"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "C#"
+        },
+        {
+          "degree": "2",
+          "name": "D#"
+        },
+        {
+          "degree": "3",
+          "name": "F"
+        },
+        {
+          "degree": "4",
+          "name": "F#"
+        },
+        {
+          "degree": "5",
+          "name": "G#"
+        },
+        {
+          "degree": "6",
+          "name": "A#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "C"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "C#"
+        },
+        {
+          "degree": "2",
+          "name": "D#"
+        },
+        {
+          "degree": "3",
+          "name": "F"
+        },
+        {
+          "degree": "4",
+          "name": "F#"
+        },
+        {
+          "degree": "5",
+          "name": "G#"
+        },
+        {
+          "degree": "6",
+          "name": "A"
+        },
+        {
+          "degree": "7",
+          "name": "A#"
+        },
+        {
+          "degree": "8",
+          "name": "C"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "C#"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "F"
+        },
+        {
+          "degree": "5",
+          "name": "G"
+        },
+        {
+          "degree": "6",
+          "name": "G#"
+        },
+        {
+          "degree": "7",
+          "name": "A#"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "C#"
+        },
+        {
+          "degree": "2",
+          "name": "D#"
+        },
+        {
+          "degree": "3",
+          "name": "F"
+        },
+        {
+          "degree": "4",
+          "name": "G"
+        },
+        {
+          "degree": "5",
+          "name": "A"
+        },
+        {
+          "degree": "6",
+          "name": "B"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "C#"
+        },
+        {
+          "degree": "2",
+          "name": "D#"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "F"
+        },
+        {
+          "degree": "5",
+          "name": "G#"
+        },
+        {
+          "degree": "6",
+          "name": "A#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
@@ -3456,6 +3772,164 @@
           "degree": "7度",
           "name": "C#"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "D"
+        },
+        {
+          "degree": "2",
+          "name": "E"
+        },
+        {
+          "degree": "3",
+          "name": "F#"
+        },
+        {
+          "degree": "4",
+          "name": "G"
+        },
+        {
+          "degree": "5",
+          "name": "A"
+        },
+        {
+          "degree": "6",
+          "name": "B"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "C#"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "D"
+        },
+        {
+          "degree": "2",
+          "name": "E"
+        },
+        {
+          "degree": "3",
+          "name": "F#"
+        },
+        {
+          "degree": "4",
+          "name": "G"
+        },
+        {
+          "degree": "5",
+          "name": "A"
+        },
+        {
+          "degree": "6",
+          "name": "A#"
+        },
+        {
+          "degree": "7",
+          "name": "B"
+        },
+        {
+          "degree": "8",
+          "name": "C#"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "D"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "F#"
+        },
+        {
+          "degree": "5",
+          "name": "G#"
+        },
+        {
+          "degree": "6",
+          "name": "A"
+        },
+        {
+          "degree": "7",
+          "name": "B"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "D"
+        },
+        {
+          "degree": "2",
+          "name": "E"
+        },
+        {
+          "degree": "3",
+          "name": "F#"
+        },
+        {
+          "degree": "4",
+          "name": "G#"
+        },
+        {
+          "degree": "5",
+          "name": "A#"
+        },
+        {
+          "degree": "6",
+          "name": "C"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "D"
+        },
+        {
+          "degree": "2",
+          "name": "E"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "F#"
+        },
+        {
+          "degree": "5",
+          "name": "A"
+        },
+        {
+          "degree": "6",
+          "name": "B"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -4659,6 +5133,164 @@
         {
           "degree": "7度",
           "name": "D"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "D#"
+        },
+        {
+          "degree": "2",
+          "name": "F"
+        },
+        {
+          "degree": "3",
+          "name": "G"
+        },
+        {
+          "degree": "4",
+          "name": "G#"
+        },
+        {
+          "degree": "5",
+          "name": "A#"
+        },
+        {
+          "degree": "6",
+          "name": "C"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "D"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "D#"
+        },
+        {
+          "degree": "2",
+          "name": "F"
+        },
+        {
+          "degree": "3",
+          "name": "G"
+        },
+        {
+          "degree": "4",
+          "name": "G#"
+        },
+        {
+          "degree": "5",
+          "name": "A#"
+        },
+        {
+          "degree": "6",
+          "name": "B"
+        },
+        {
+          "degree": "7",
+          "name": "C"
+        },
+        {
+          "degree": "8",
+          "name": "D"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "D#"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "G"
+        },
+        {
+          "degree": "5",
+          "name": "A"
+        },
+        {
+          "degree": "6",
+          "name": "A#"
+        },
+        {
+          "degree": "7",
+          "name": "C"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "D#"
+        },
+        {
+          "degree": "2",
+          "name": "F"
+        },
+        {
+          "degree": "3",
+          "name": "G"
+        },
+        {
+          "degree": "4",
+          "name": "A"
+        },
+        {
+          "degree": "5",
+          "name": "B"
+        },
+        {
+          "degree": "6",
+          "name": "C#"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "D#"
+        },
+        {
+          "degree": "2",
+          "name": "F"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "G"
+        },
+        {
+          "degree": "5",
+          "name": "A#"
+        },
+        {
+          "degree": "6",
+          "name": "C"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
@@ -5864,6 +6496,164 @@
           "degree": "7度",
           "name": "D#"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "E"
+        },
+        {
+          "degree": "2",
+          "name": "F#"
+        },
+        {
+          "degree": "3",
+          "name": "G#"
+        },
+        {
+          "degree": "4",
+          "name": "A"
+        },
+        {
+          "degree": "5",
+          "name": "B"
+        },
+        {
+          "degree": "6",
+          "name": "C#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "D#"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "E"
+        },
+        {
+          "degree": "2",
+          "name": "F#"
+        },
+        {
+          "degree": "3",
+          "name": "G#"
+        },
+        {
+          "degree": "4",
+          "name": "A"
+        },
+        {
+          "degree": "5",
+          "name": "B"
+        },
+        {
+          "degree": "6",
+          "name": "C"
+        },
+        {
+          "degree": "7",
+          "name": "C#"
+        },
+        {
+          "degree": "8",
+          "name": "D#"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "E"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "G#"
+        },
+        {
+          "degree": "5",
+          "name": "A#"
+        },
+        {
+          "degree": "6",
+          "name": "B"
+        },
+        {
+          "degree": "7",
+          "name": "C#"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "E"
+        },
+        {
+          "degree": "2",
+          "name": "F#"
+        },
+        {
+          "degree": "3",
+          "name": "G#"
+        },
+        {
+          "degree": "4",
+          "name": "A#"
+        },
+        {
+          "degree": "5",
+          "name": "C"
+        },
+        {
+          "degree": "6",
+          "name": "D"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "E"
+        },
+        {
+          "degree": "2",
+          "name": "F#"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "G#"
+        },
+        {
+          "degree": "5",
+          "name": "B"
+        },
+        {
+          "degree": "6",
+          "name": "C#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -7067,6 +7857,164 @@
         {
           "degree": "7度",
           "name": "E"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "F"
+        },
+        {
+          "degree": "2",
+          "name": "G"
+        },
+        {
+          "degree": "3",
+          "name": "A"
+        },
+        {
+          "degree": "4",
+          "name": "A#"
+        },
+        {
+          "degree": "5",
+          "name": "C"
+        },
+        {
+          "degree": "6",
+          "name": "D"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "E"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "F"
+        },
+        {
+          "degree": "2",
+          "name": "G"
+        },
+        {
+          "degree": "3",
+          "name": "A"
+        },
+        {
+          "degree": "4",
+          "name": "A#"
+        },
+        {
+          "degree": "5",
+          "name": "C"
+        },
+        {
+          "degree": "6",
+          "name": "C#"
+        },
+        {
+          "degree": "7",
+          "name": "D"
+        },
+        {
+          "degree": "8",
+          "name": "E"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "F"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "A"
+        },
+        {
+          "degree": "5",
+          "name": "B"
+        },
+        {
+          "degree": "6",
+          "name": "C"
+        },
+        {
+          "degree": "7",
+          "name": "D"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "F"
+        },
+        {
+          "degree": "2",
+          "name": "G"
+        },
+        {
+          "degree": "3",
+          "name": "A"
+        },
+        {
+          "degree": "4",
+          "name": "B"
+        },
+        {
+          "degree": "5",
+          "name": "C#"
+        },
+        {
+          "degree": "6",
+          "name": "D#"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "F"
+        },
+        {
+          "degree": "2",
+          "name": "G"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "A"
+        },
+        {
+          "degree": "5",
+          "name": "C"
+        },
+        {
+          "degree": "6",
+          "name": "D"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
@@ -8272,6 +9220,164 @@
           "degree": "7度",
           "name": "F"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "F#"
+        },
+        {
+          "degree": "2",
+          "name": "G#"
+        },
+        {
+          "degree": "3",
+          "name": "A#"
+        },
+        {
+          "degree": "4",
+          "name": "B"
+        },
+        {
+          "degree": "5",
+          "name": "C#"
+        },
+        {
+          "degree": "6",
+          "name": "D#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "F"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "F#"
+        },
+        {
+          "degree": "2",
+          "name": "G#"
+        },
+        {
+          "degree": "3",
+          "name": "A#"
+        },
+        {
+          "degree": "4",
+          "name": "B"
+        },
+        {
+          "degree": "5",
+          "name": "C#"
+        },
+        {
+          "degree": "6",
+          "name": "D"
+        },
+        {
+          "degree": "7",
+          "name": "D#"
+        },
+        {
+          "degree": "8",
+          "name": "F"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "F#"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "A#"
+        },
+        {
+          "degree": "5",
+          "name": "C"
+        },
+        {
+          "degree": "6",
+          "name": "C#"
+        },
+        {
+          "degree": "7",
+          "name": "D#"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "F#"
+        },
+        {
+          "degree": "2",
+          "name": "G#"
+        },
+        {
+          "degree": "3",
+          "name": "A#"
+        },
+        {
+          "degree": "4",
+          "name": "C"
+        },
+        {
+          "degree": "5",
+          "name": "D"
+        },
+        {
+          "degree": "6",
+          "name": "E"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "F#"
+        },
+        {
+          "degree": "2",
+          "name": "G#"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "A#"
+        },
+        {
+          "degree": "5",
+          "name": "C#"
+        },
+        {
+          "degree": "6",
+          "name": "D#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -9475,6 +10581,164 @@
         {
           "degree": "7度",
           "name": "F#"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "G"
+        },
+        {
+          "degree": "2",
+          "name": "A"
+        },
+        {
+          "degree": "3",
+          "name": "B"
+        },
+        {
+          "degree": "4",
+          "name": "C"
+        },
+        {
+          "degree": "5",
+          "name": "D"
+        },
+        {
+          "degree": "6",
+          "name": "E"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "F#"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "G"
+        },
+        {
+          "degree": "2",
+          "name": "A"
+        },
+        {
+          "degree": "3",
+          "name": "B"
+        },
+        {
+          "degree": "4",
+          "name": "C"
+        },
+        {
+          "degree": "5",
+          "name": "D"
+        },
+        {
+          "degree": "6",
+          "name": "D#"
+        },
+        {
+          "degree": "7",
+          "name": "E"
+        },
+        {
+          "degree": "8",
+          "name": "F#"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "G"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "B"
+        },
+        {
+          "degree": "5",
+          "name": "C#"
+        },
+        {
+          "degree": "6",
+          "name": "D"
+        },
+        {
+          "degree": "7",
+          "name": "E"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "G"
+        },
+        {
+          "degree": "2",
+          "name": "A"
+        },
+        {
+          "degree": "3",
+          "name": "B"
+        },
+        {
+          "degree": "4",
+          "name": "C#"
+        },
+        {
+          "degree": "5",
+          "name": "D#"
+        },
+        {
+          "degree": "6",
+          "name": "F"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "G"
+        },
+        {
+          "degree": "2",
+          "name": "A"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "B"
+        },
+        {
+          "degree": "5",
+          "name": "D"
+        },
+        {
+          "degree": "6",
+          "name": "E"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
@@ -10680,6 +11944,164 @@
           "degree": "7度",
           "name": "G"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "G#"
+        },
+        {
+          "degree": "2",
+          "name": "A#"
+        },
+        {
+          "degree": "3",
+          "name": "C"
+        },
+        {
+          "degree": "4",
+          "name": "C#"
+        },
+        {
+          "degree": "5",
+          "name": "D#"
+        },
+        {
+          "degree": "6",
+          "name": "F"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "G"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "G#"
+        },
+        {
+          "degree": "2",
+          "name": "A#"
+        },
+        {
+          "degree": "3",
+          "name": "C"
+        },
+        {
+          "degree": "4",
+          "name": "C#"
+        },
+        {
+          "degree": "5",
+          "name": "D#"
+        },
+        {
+          "degree": "6",
+          "name": "E"
+        },
+        {
+          "degree": "7",
+          "name": "F"
+        },
+        {
+          "degree": "8",
+          "name": "G"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "G#"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "C"
+        },
+        {
+          "degree": "5",
+          "name": "D"
+        },
+        {
+          "degree": "6",
+          "name": "D#"
+        },
+        {
+          "degree": "7",
+          "name": "F"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "G#"
+        },
+        {
+          "degree": "2",
+          "name": "A#"
+        },
+        {
+          "degree": "3",
+          "name": "C"
+        },
+        {
+          "degree": "4",
+          "name": "D"
+        },
+        {
+          "degree": "5",
+          "name": "E"
+        },
+        {
+          "degree": "6",
+          "name": "F#"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "G#"
+        },
+        {
+          "degree": "2",
+          "name": "A#"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "C"
+        },
+        {
+          "degree": "5",
+          "name": "D#"
+        },
+        {
+          "degree": "6",
+          "name": "F"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -11883,6 +13305,164 @@
         {
           "degree": "7度",
           "name": "G#"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "A"
+        },
+        {
+          "degree": "2",
+          "name": "B"
+        },
+        {
+          "degree": "3",
+          "name": "C#"
+        },
+        {
+          "degree": "4",
+          "name": "D"
+        },
+        {
+          "degree": "5",
+          "name": "E"
+        },
+        {
+          "degree": "6",
+          "name": "F#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "G#"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "A"
+        },
+        {
+          "degree": "2",
+          "name": "B"
+        },
+        {
+          "degree": "3",
+          "name": "C#"
+        },
+        {
+          "degree": "4",
+          "name": "D"
+        },
+        {
+          "degree": "5",
+          "name": "E"
+        },
+        {
+          "degree": "6",
+          "name": "F"
+        },
+        {
+          "degree": "7",
+          "name": "F#"
+        },
+        {
+          "degree": "8",
+          "name": "G#"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "A"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "C#"
+        },
+        {
+          "degree": "5",
+          "name": "D#"
+        },
+        {
+          "degree": "6",
+          "name": "E"
+        },
+        {
+          "degree": "7",
+          "name": "F#"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "A"
+        },
+        {
+          "degree": "2",
+          "name": "B"
+        },
+        {
+          "degree": "3",
+          "name": "C#"
+        },
+        {
+          "degree": "4",
+          "name": "D#"
+        },
+        {
+          "degree": "5",
+          "name": "F"
+        },
+        {
+          "degree": "6",
+          "name": "G"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "A"
+        },
+        {
+          "degree": "2",
+          "name": "B"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "C#"
+        },
+        {
+          "degree": "5",
+          "name": "E"
+        },
+        {
+          "degree": "6",
+          "name": "F#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
@@ -13088,6 +14668,164 @@
           "degree": "7度",
           "name": "A"
         }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "A#"
+        },
+        {
+          "degree": "2",
+          "name": "C"
+        },
+        {
+          "degree": "3",
+          "name": "D"
+        },
+        {
+          "degree": "4",
+          "name": "D#"
+        },
+        {
+          "degree": "5",
+          "name": "F"
+        },
+        {
+          "degree": "6",
+          "name": "G"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "A"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "A#"
+        },
+        {
+          "degree": "2",
+          "name": "C"
+        },
+        {
+          "degree": "3",
+          "name": "D"
+        },
+        {
+          "degree": "4",
+          "name": "D#"
+        },
+        {
+          "degree": "5",
+          "name": "F"
+        },
+        {
+          "degree": "6",
+          "name": "F#"
+        },
+        {
+          "degree": "7",
+          "name": "G"
+        },
+        {
+          "degree": "8",
+          "name": "A"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "A#"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "D"
+        },
+        {
+          "degree": "5",
+          "name": "E"
+        },
+        {
+          "degree": "6",
+          "name": "F"
+        },
+        {
+          "degree": "7",
+          "name": "G"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "A#"
+        },
+        {
+          "degree": "2",
+          "name": "C"
+        },
+        {
+          "degree": "3",
+          "name": "D"
+        },
+        {
+          "degree": "4",
+          "name": "E"
+        },
+        {
+          "degree": "5",
+          "name": "F#"
+        },
+        {
+          "degree": "6",
+          "name": "G#"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "A#"
+        },
+        {
+          "degree": "2",
+          "name": "C"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "D"
+        },
+        {
+          "degree": "5",
+          "name": "F"
+        },
+        {
+          "degree": "6",
+          "name": "G"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        }
       ]
     },
     "ブルース": {
@@ -14291,6 +16029,164 @@
         {
           "degree": "7度",
           "name": "A#"
+        }
+      ],
+      "ビバップ・ドミナント": [
+        {
+          "degree": "1",
+          "name": "B"
+        },
+        {
+          "degree": "2",
+          "name": "C#"
+        },
+        {
+          "degree": "3",
+          "name": "D#"
+        },
+        {
+          "degree": "4",
+          "name": "E"
+        },
+        {
+          "degree": "5",
+          "name": "F#"
+        },
+        {
+          "degree": "6",
+          "name": "G#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
+        },
+        {
+          "degree": "8",
+          "name": "A#"
+        }
+      ],
+      "ビバップ・メジャー": [
+        {
+          "degree": "1",
+          "name": "B"
+        },
+        {
+          "degree": "2",
+          "name": "C#"
+        },
+        {
+          "degree": "3",
+          "name": "D#"
+        },
+        {
+          "degree": "4",
+          "name": "E"
+        },
+        {
+          "degree": "5",
+          "name": "F#"
+        },
+        {
+          "degree": "6",
+          "name": "G"
+        },
+        {
+          "degree": "7",
+          "name": "G#"
+        },
+        {
+          "degree": "8",
+          "name": "A#"
+        }
+      ],
+      "ハーフ・ホール・ディミニッシュ": [
+        {
+          "degree": "1",
+          "name": "B"
+        },
+        {
+          "degree": "2",
+          "name": "Db"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "D#"
+        },
+        {
+          "degree": "5",
+          "name": "F"
+        },
+        {
+          "degree": "6",
+          "name": "F#"
+        },
+        {
+          "degree": "7",
+          "name": "G#"
+        },
+        {
+          "degree": "8",
+          "name": "Bb"
+        }
+      ],
+      "6音WholeTone": [
+        {
+          "degree": "1",
+          "name": "B"
+        },
+        {
+          "degree": "2",
+          "name": "C#"
+        },
+        {
+          "degree": "3",
+          "name": "D#"
+        },
+        {
+          "degree": "4",
+          "name": "F"
+        },
+        {
+          "degree": "5",
+          "name": "G"
+        },
+        {
+          "degree": "6",
+          "name": "A"
+        }
+      ],
+      "二重モードミクスチャー": [
+        {
+          "degree": "1",
+          "name": "B"
+        },
+        {
+          "degree": "2",
+          "name": "C#"
+        },
+        {
+          "degree": "3",
+          "name": "Eb"
+        },
+        {
+          "degree": "4",
+          "name": "D#"
+        },
+        {
+          "degree": "5",
+          "name": "F#"
+        },
+        {
+          "degree": "6",
+          "name": "G#"
+        },
+        {
+          "degree": "7",
+          "name": "Bb"
         }
       ]
     },
