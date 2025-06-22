@@ -4,6 +4,7 @@ const scaleSelect = document.getElementById("scale-select");
 const output = document.getElementById("output");
 
 let scaleData = {};
+const CATEGORY_LIST = ["メジャー", "マイナー", "チャーチ", "ジャズ"];
 
 fetch("scales.json")
   .then(res => res.json())
@@ -12,13 +13,13 @@ fetch("scales.json")
     initUI();
   });
 
-const CATEGORY_LIST = ["メジャー", "マイナー", "チャーチ"]; // 常に表示
-
 function initUI() {
-  // キーをセット
   keySelect.innerHTML = "";
   Object.keys(scaleData).forEach(key => {
-    keySelect.insertAdjacentHTML("beforeend", `<option value="${key}">${key}</option>`);
+    const opt = document.createElement("option");
+    opt.value = key;
+    opt.textContent = key;
+    keySelect.appendChild(opt);
   });
   keySelect.value = "C";
   populateCategories();
@@ -27,19 +28,19 @@ function initUI() {
 function populateCategories() {
   categorySelect.innerHTML = "";
   const key = keySelect.value;
+  const availableCats = Object.keys(scaleData[key]);
 
   CATEGORY_LIST.forEach(cat => {
-    const exists = !!scaleData[key][cat];
+    const exists = availableCats.includes(cat);
     const opt = document.createElement("option");
     opt.value = cat;
-    opt.textContent = cat + (exists ? "" : " (なし)");
+    opt.textContent = exists ? cat : cat + "（なし）";
     if (!exists) opt.disabled = true;
     categorySelect.appendChild(opt);
   });
 
-  // 初期選択は最初に利用可能なカテゴリ
-  let firstAvailable = CATEGORY_LIST.find(cat => !!scaleData[key][cat]);
-  categorySelect.value = firstAvailable;
+  const firstAvailable = CATEGORY_LIST.find(cat => availableCats.includes(cat));
+  categorySelect.value = firstAvailable || CATEGORY_LIST[0];
   populateScales();
 }
 
@@ -57,8 +58,12 @@ function populateScales() {
 
   const scales = Object.keys(scalesObj);
   scales.forEach(scl => {
-    scaleSelect.insertAdjacentHTML("beforeend", `<option value="${scl}">${scl}</option>`);
+    const opt = document.createElement("option");
+    opt.value = scl;
+    opt.textContent = scl;
+    scaleSelect.appendChild(opt);
   });
+
   scaleSelect.value = scales[0];
   updateOutput();
 }
@@ -67,16 +72,15 @@ function updateOutput() {
   const key = keySelect.value;
   const category = categorySelect.value;
   const scale = scaleSelect.value;
-  const notes = scaleData[key][category][scale];
+  const notes = scaleData[key][category]?.[scale];
   if (!notes) {
-    output.textContent = "構成音が見つかりません。";
+    output.innerHTML = "構成音が見つかりません。";
     return;
   }
   output.innerHTML = "<strong>構成音：</strong><br>" +
     notes.map(n => `${n.degree} (${n.name})`).join(", ");
 }
 
-// イベント
 keySelect.addEventListener("change", populateCategories);
 categorySelect.addEventListener("change", populateScales);
 scaleSelect.addEventListener("change", updateOutput);
