@@ -9,10 +9,12 @@ fetch("scales.json")
   .then(res => res.json())
   .then(data => {
     scaleData = data;
-    populateKeys();
+    initializeUI();
   });
 
-function populateKeys() {
+function initializeUI() {
+  // キー一覧をセット
+  keySelect.innerHTML = "";
   const keys = Object.keys(scaleData);
   keys.forEach(key => {
     const opt = document.createElement("option");
@@ -20,7 +22,10 @@ function populateKeys() {
     opt.textContent = key;
     keySelect.appendChild(opt);
   });
+
+  // 初期選択
   keySelect.value = "C";
+
   populateCategories();
 }
 
@@ -33,6 +38,8 @@ function populateCategories() {
     opt.textContent = cat;
     categorySelect.appendChild(opt);
   });
+
+  categorySelect.value = "メジャー";
   populateScales();
 }
 
@@ -45,11 +52,17 @@ function populateScales() {
     opt.textContent = scl;
     scaleSelect.appendChild(opt);
   });
+
+  scaleSelect.value = "メジャー";
   updateOutput();
 }
 
 function updateOutput() {
   const scaleInfo = scaleData[keySelect.value][categorySelect.value][scaleSelect.value];
+  if (!scaleInfo) {
+    output.innerHTML = "構成音が見つかりません。";
+    return;
+  }
   output.innerHTML = "<strong>構成音：</strong><br>" +
     scaleInfo.map(note => `${note.degree} (${note.name})`).join(", ");
 }
@@ -57,9 +70,11 @@ function updateOutput() {
 keySelect.addEventListener("change", () => {
   populateCategories();
 });
+
 categorySelect.addEventListener("change", () => {
   populateScales();
 });
+
 scaleSelect.addEventListener("change", () => {
   updateOutput();
 });
