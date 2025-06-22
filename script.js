@@ -33,7 +33,6 @@ function initializeSelectors() {
     showScaleInfo(keySelect.value, categorySelect.value, scaleSelect.value);
   });
 
-  // 初期化
   if (keySelect.options.length > 0) {
     keySelect.selectedIndex = 0;
     updateCategorySelector(keySelect.value);
