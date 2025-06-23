@@ -2,13 +2,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tber Scale Viewer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tber Scale Viewer - Full Restored</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f0f0f0; }
+    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
     select, table { margin: 1rem 0; padding: 0.5rem; font-size: 1rem; }
     .description { margin-top: 2rem; padding: 1rem; background: #fff; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
   </style>
 </head>
 <body>
@@ -23,58 +25,55 @@
   <select id="scale"></select>
 
   <div id="output">
-    <table id="notes-table" border="1" cellpadding="8"></table>
+    <table id="notes-table"></table>
     <div id="description" class="description"></div>
   </div>
 
   <script>
-    const data = {};
-    const keys = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
-    const groups = {
-      "メジャー": ["メジャースケール", "メジャーペンタトニック", "メジャーブルース"],
-      "マイナー": ["ナチュラルマイナー", "ハーモニックマイナー", "メロディックマイナー", "マイナーペンタトニック", "マイナーブルース"]
-    };
-
-    const baseScales = {
-      "メジャースケール": { intervals: ["1", "2", "3", "4", "5", "6", "7"], desc: "明るく安定した印象。" },
-      "メジャーペンタトニック": { intervals: ["1", "2", "3", "5", "6"], desc: "5音で構成され、民謡などでも使われる。" },
-      "メジャーブルース": { intervals: ["1", "2", "♭3", "3", "5", "6"], desc: "ブルージーな響きに明るさを加えたスケール。" },
-      "ナチュラルマイナー": { intervals: ["1", "2", "♭3", "4", "5", "♭6", "♭7"], desc: "悲しげで内省的な雰囲気。" },
-      "ハーモニックマイナー": { intervals: ["1", "2", "♭3", "4", "5", "♭6", "7"], desc: "クラシックやラテン的な響き。" },
-      "メロディックマイナー": { intervals: ["1", "2", "♭3", "4", "5", "6", "7"], desc: "上行と下行で変化することもある。" },
-      "マイナーペンタトニック": { intervals: ["1", "♭3", "4", "5", "♭7"], desc: "ロックなどで頻繁に使用される5音スケール。" },
-      "マイナーブルース": { intervals: ["1", "♭3", "4", "♭5", "5", "♭7"], desc: "ブルースの中心的スケール。" }
-    };
-
-    const chromatic = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
-
-    function transpose(note, semitones) {
-      const i = chromatic.indexOf(note);
-      return chromatic[(i + semitones + 12) % 12];
-    }
-
-    function getNoteByInterval(root, interval) {
-      const semitoneMap = {
-        "1": 0, "2": 2, "3": 4, "4": 5, "5": 7, "6": 9, "7": 11,
-        "♭2": 1, "♭3": 3, "♯4": 6, "♭5": 6, "♯5": 8, "♭6": 8, "♭7": 10
-      };
-      return transpose(root, semitoneMap[interval] ?? 0);
-    }
-
-    keys.forEach(key => {
-      data[key] = {};
-      for (let group in groups) {
-        data[key][group] = {};
-        groups[group].forEach(scale => {
-          const intervals = baseScales[scale].intervals;
-          const notes = intervals.map(i => [i, getNoteByInterval(key, i)]);
-          data[key][group][scale] = {
-            notes: notes,
-            description: `${key}${scale}：` + baseScales[scale].desc
-          };
-        });
+    const data = {
+      "C": {
+        "メジャー": {
+          "メジャースケール": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["7", "B"]],
+            description: "明るく安定した印象を持ち、音楽の基礎となるスケール。全ての白鍵を使う。"
+          },
+          "メジャーペンタトニック": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["5", "G"], ["6", "A"]],
+            description: "5音構成で明るくシンプルな響き。フォークやポップスに多用される。"
+          }
+        },
+        "チャーチモード": {
+          "アイオニアン（Ionian）": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["7", "B"]],
+            description: "メジャースケールと同じ構成で、明るくバランスが良いモード。"
+          },
+          "ドリアン（Dorian）": {
+            notes: [["1", "C"], ["2", "D"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["6", "A"], ["♭7", "Bb"]],
+            description: "ナチュラルマイナーに似ているが6度がメジャー。ジャズやファンクで使われる。"
+          },
+          "フリジアン（Phrygian）": {
+            notes: [["1", "C"], ["♭2", "Db"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["♭6", "Ab"], ["♭7", "Bb"]],
+            description: "エキゾチックで暗く緊張感のある響き。スペイン音楽などに使われる。"
+          },
+          "リディアン（Lydian）": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["#4", "F#"], ["5", "G"], ["6", "A"], ["7", "B"]],
+            description: "メジャースケールに#4を加えた浮遊感のある響き。映画音楽にも多い。"
+          },
+          "ミクソリディアン（Mixolydian）": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["♭7", "Bb"]],
+            description: "メジャースケールに♭7を加えたブルージーな印象。ロックなどで多用。"
+          },
+          "エオリアン（Aeolian）": {
+            notes: [["1", "C"], ["2", "D"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["♭6", "Ab"], ["♭7", "Bb"]],
+            description: "ナチュラルマイナーと同じ構成。哀愁のある音階。"
+          },
+          "ロクリアン（Locrian）": {
+            notes: [["1", "C"], ["♭2", "Db"], ["♭3", "Eb"], ["4", "F"], ["♭5", "Gb"], ["♭6", "Ab"], ["♭7", "Bb"]],
+            description: "不安定で緊張感が強く、独特なサウンド。"
+          }
+        }
       }
-    });
+    };
 
     const keySelect = document.getElementById("key");
     const groupSelect = document.getElementById("group");
@@ -84,12 +83,12 @@
 
     function updateKeyOptions() {
       keySelect.innerHTML = "";
-      keys.forEach(k => {
+      for (let key in data) {
         const opt = document.createElement("option");
-        opt.value = k;
-        opt.textContent = k;
+        opt.value = key;
+        opt.textContent = key;
         keySelect.appendChild(opt);
-      });
+      }
     }
 
     function updateGroupOptions(key) {
@@ -113,23 +112,32 @@
     }
 
     function updateDisplay(key, group, scale) {
-      const notes = data[key][group][scale].notes;
-      const desc = data[key][group][scale].description;
-      notesTable.innerHTML = "<tr>" + notes.map(n => `<th>${n[0]}</th>`).join("") + "</tr>";
-      notesTable.innerHTML += "<tr>" + notes.map(n => `<td>${n[1]}</td>`).join("") + "</tr>";
+      const scaleData = data[key][group][scale];
+      if (!scaleData) return;
+      const notes = scaleData.notes;
+      const desc = scaleData.description;
+      let headerRow = "<tr>";
+      let valueRow = "<tr>";
+      notes.forEach(note => {
+        headerRow += `<th>${note[0]}</th>`;
+        valueRow += `<td>${note[1]}</td>`;
+      });
+      headerRow += "</tr>";
+      valueRow += "</tr>";
+      notesTable.innerHTML = headerRow + valueRow;
       descriptionBox.textContent = desc;
     }
 
     keySelect.addEventListener("change", () => {
-      const prevGroup = groupSelect.value;
-      const prevScale = scaleSelect.value;
+      const currentGroup = groupSelect.value;
+      const currentScale = scaleSelect.value;
       updateGroupOptions(keySelect.value);
-      if (data[keySelect.value][prevGroup]) {
-        groupSelect.value = prevGroup;
-        updateScaleOptions(keySelect.value, prevGroup);
-        if (data[keySelect.value][prevGroup][prevScale]) {
-          scaleSelect.value = prevScale;
-          updateDisplay(keySelect.value, prevGroup, prevScale);
+      if (data[keySelect.value][currentGroup]) {
+        groupSelect.value = currentGroup;
+        updateScaleOptions(keySelect.value, currentGroup);
+        if (data[keySelect.value][currentGroup][currentScale]) {
+          scaleSelect.value = currentScale;
+          updateDisplay(keySelect.value, currentGroup, currentScale);
         }
       }
     });
@@ -143,7 +151,6 @@
       updateDisplay(keySelect.value, groupSelect.value, scaleSelect.value);
     });
 
-    // 初期化
     updateKeyOptions();
     updateGroupOptions("C");
     updateScaleOptions("C", "メジャー");
