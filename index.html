@@ -28,26 +28,53 @@
   </div>
 
   <script>
-    const data = {
-      "C": {
-        "メジャー": {
-          "メジャースケール": {
-            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["7", "B"]],
-            description: "Cメジャースケールは、明るく安定した印象を持つスケールです。すべての白鍵で構成されており、調性の基本とされます。"
-          },
-          "メジャーペンタトニック": {
-            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["5", "G"], ["6", "A"]],
-            description: "メジャーペンタトニックは5音で構成され、穏やかで安定感のある響きが特徴です。民謡やロックなど幅広いジャンルで使われます。"
-          }
-        },
-        "マイナー": {
-          "ナチュラルマイナー": {
-            notes: [["1", "C"], ["2", "D"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["♭6", "Ab"], ["♭7", "Bb"]],
-            description: "ナチュラルマイナースケールは、悲しげで内省的な雰囲気を持ちます。Cを基準とした場合、Eb・Ab・Bbが特徴です。"
-          }
-        }
-      }
+    const data = {};
+    const keys = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
+    const groups = {
+      "メジャー": ["メジャースケール", "メジャーペンタトニック", "メジャーブルース"],
+      "マイナー": ["ナチュラルマイナー", "ハーモニックマイナー", "メロディックマイナー", "マイナーペンタトニック", "マイナーブルース"]
     };
+
+    const baseScales = {
+      "メジャースケール": { intervals: ["1", "2", "3", "4", "5", "6", "7"], desc: "明るく安定した印象。" },
+      "メジャーペンタトニック": { intervals: ["1", "2", "3", "5", "6"], desc: "5音で構成され、民謡などでも使われる。" },
+      "メジャーブルース": { intervals: ["1", "2", "♭3", "3", "5", "6"], desc: "ブルージーな響きに明るさを加えたスケール。" },
+      "ナチュラルマイナー": { intervals: ["1", "2", "♭3", "4", "5", "♭6", "♭7"], desc: "悲しげで内省的な雰囲気。" },
+      "ハーモニックマイナー": { intervals: ["1", "2", "♭3", "4", "5", "♭6", "7"], desc: "クラシックやラテン的な響き。" },
+      "メロディックマイナー": { intervals: ["1", "2", "♭3", "4", "5", "6", "7"], desc: "上行と下行で変化することもある。" },
+      "マイナーペンタトニック": { intervals: ["1", "♭3", "4", "5", "♭7"], desc: "ロックなどで頻繁に使用される5音スケール。" },
+      "マイナーブルース": { intervals: ["1", "♭3", "4", "♭5", "5", "♭7"], desc: "ブルースの中心的スケール。" }
+    };
+
+    const chromatic = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
+
+    function transpose(note, semitones) {
+      const i = chromatic.indexOf(note);
+      return chromatic[(i + semitones + 12) % 12];
+    }
+
+    function getNoteByInterval(root, interval) {
+      const semitoneMap = {
+        "1": 0, "2": 2, "3": 4, "4": 5, "5": 7, "6": 9, "7": 11,
+        "♭2": 1, "♭3": 3, "♯4": 6, "♭5": 6, "♯5": 8, "♭6": 8, "♭7": 10
+      };
+      return transpose(root, semitoneMap[interval] ?? 0);
+    }
+
+    keys.forEach(key => {
+      data[key] = {};
+      for (let group in groups) {
+        data[key][group] = {};
+        groups[group].forEach(scale => {
+          const intervals = baseScales[scale].intervals;
+          const notes = intervals.map(i => [i, getNoteByInterval(key, i)]);
+          data[key][group][scale] = {
+            notes: notes,
+            description: `${key}${scale}：` + baseScales[scale].desc
+          };
+        });
+      }
+    });
 
     const keySelect = document.getElementById("key");
     const groupSelect = document.getElementById("group");
@@ -57,12 +84,12 @@
 
     function updateKeyOptions() {
       keySelect.innerHTML = "";
-      for (let key in data) {
+      keys.forEach(k => {
         const opt = document.createElement("option");
-        opt.value = key;
-        opt.textContent = key;
+        opt.value = k;
+        opt.textContent = k;
         keySelect.appendChild(opt);
-      }
+      });
     }
 
     function updateGroupOptions(key) {
@@ -88,12 +115,8 @@
     function updateDisplay(key, group, scale) {
       const notes = data[key][group][scale].notes;
       const desc = data[key][group][scale].description;
-      notesTable.innerHTML = "<tr><th>度数</th><th>音名</th></tr>";
-      notes.forEach(row => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td>`;
-        notesTable.appendChild(tr);
-      });
+      notesTable.innerHTML = "<tr>" + notes.map(n => `<th>${n[0]}</th>`).join("") + "</tr>";
+      notesTable.innerHTML += "<tr>" + notes.map(n => `<td>${n[1]}</td>`).join("") + "</tr>";
       descriptionBox.textContent = desc;
     }
 
