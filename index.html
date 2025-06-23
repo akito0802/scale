@@ -1,27 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Tber Scale Viewer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tber - 楽器別スケール表示</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 20px; }
-    .instrument-buttons { margin-bottom: 20px; }
-    button { margin: 0 10px; padding: 10px 20px; }
-    img { width: 100%; max-width: 800px; }
-  </style>
-  <script>
-    function showInstrument(instrument) {
-      document.getElementById('instrument-img').src = instrument + '_c_major.png';
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
-  </script>
+    .instrument-buttons {
+      margin-top: 20px;
+    }
+    .instrument-buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #fretboard-img {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Tber Scale Viewer</h1>
+  <h1>Tber - Cメジャースケール表示</h1>
   <div class="instrument-buttons">
-    <button onclick="showInstrument('guitar')">ギター</button>
-    <button onclick="showInstrument('bass')">ベース</button>
-    <button onclick="showInstrument('ukulele')">ウクレレ</button>
+    <button onclick="showFretboard('guitar')">ギター</button>
+    <button onclick="showFretboard('bass')">ベース</button>
+    <button onclick="showFretboard('ukulele')">ウクレレ</button>
   </div>
-  <img id="instrument-img" src="guitar_c_major.png" alt="Instrument Scale">
+  <img id="fretboard-img" src="c_major_guitar.png" alt="指板図" />
+  <script>
+    function showFretboard(type) {
+      const img = document.getElementById('fretboard-img');
+      if (type === 'guitar') {
+        img.src = 'c_major_guitar.png';
+      } else if (type === 'bass') {
+        img.src = 'c_major_bass.png';
+      } else if (type === 'ukulele') {
+        img.src = 'c_major_ukulele.png';
+      }
+    }
+  </script>
 </body>
 </html>
