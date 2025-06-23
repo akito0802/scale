@@ -2650,6 +2650,146 @@
           "degree": "5",
           "description": "中央アフリカ・ピグミー族の音楽で使われる原始的なスケール。短いモチーフの反復によるリズム感が特徴。\n【音楽的アプローチ】ジャンルやコード進行に応じて独自に探究してみよう。"
         }
+      ],
+      "バリ音階": [
+        {
+          "degree": "1度",
+          "name": "C",
+          "description": "インドネシアのバリ島に由来する音階。独特の不協和的な音程とリズム感が特徴。"
+        },
+        {
+          "degree": "2度",
+          "name": "D",
+          "description": ""
+        },
+        {
+          "degree": "♭4度",
+          "name": "E♭",
+          "description": ""
+        },
+        {
+          "degree": "5度",
+          "name": "G",
+          "description": ""
+        },
+        {
+          "degree": "♭7度",
+          "name": "B♭",
+          "description": ""
+        }
+      ],
+      "スンダ音階": [
+        {
+          "degree": "1度",
+          "name": "C",
+          "description": "ジャワ島西部に伝わるスンダ族の音楽に使われるスケール。繊細で柔らかい響きが特徴。"
+        },
+        {
+          "degree": "2度",
+          "name": "D",
+          "description": ""
+        },
+        {
+          "degree": "4度",
+          "name": "F",
+          "description": ""
+        },
+        {
+          "degree": "5度",
+          "name": "G",
+          "description": ""
+        },
+        {
+          "degree": "6度",
+          "name": "A",
+          "description": ""
+        }
+      ],
+      "ジャワ音階": [
+        {
+          "degree": "1度",
+          "name": "C",
+          "description": "インドネシアのジャワ島に伝わる伝統音楽の音階。典型的なガムラン音楽の基盤。"
+        },
+        {
+          "degree": "♭2度",
+          "name": "D♭",
+          "description": ""
+        },
+        {
+          "degree": "4度",
+          "name": "F",
+          "description": ""
+        },
+        {
+          "degree": "5度",
+          "name": "G",
+          "description": ""
+        },
+        {
+          "degree": "♭6度",
+          "name": "A♭",
+          "description": ""
+        }
+      ],
+      "ガムランペロッグ": [
+        {
+          "degree": "1度",
+          "name": "C",
+          "description": "ペロッグは7音構成の音階で、インドネシアのガムラン音楽で用いられる。神秘的で幻想的な響き。"
+        },
+        {
+          "degree": "♭2度",
+          "name": "D♭",
+          "description": ""
+        },
+        {
+          "degree": "3度",
+          "name": "E",
+          "description": ""
+        },
+        {
+          "degree": "5度",
+          "name": "G",
+          "description": ""
+        },
+        {
+          "degree": "♭6度",
+          "name": "A♭",
+          "description": ""
+        },
+        {
+          "degree": "7度",
+          "name": "B",
+          "description": ""
+        }
+      ],
+      "ガムランスレンドロ": [
+        {
+          "degree": "1度",
+          "name": "C",
+          "description": "スレンドロは5音構成で、より均等な間隔を持つ。穏やかな響きで瞑想的な印象。"
+        },
+        {
+          "degree": "2度",
+          "name": "D",
+          "description": ""
+        },
+        {
+          "degree": "3度",
+          "name": "E",
+          "description": ""
+        },
+        {
+          "degree": "5度",
+          "name": "G",
+          "description": ""
+        },
+        {
+          "degree": "6度",
+          "name": "A",
+          "description": ""
+        }
       ]
     },
     "description": ""
