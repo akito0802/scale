@@ -2,93 +2,129 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Tber スケール辞典 - Fixed</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tber Scale Viewer</title>
   <style>
-    body{font-family:sans-serif;background:#eef3f8;margin:0;padding:2rem;text-align:center}
-    h1{margin-bottom:1rem}
-    select{font-size:1.1rem;margin:.5rem;padding:.4rem .6rem}
-    table{margin:1.5rem auto;border-collapse:collapse}
-    th,td{border:1px solid #bbb;padding:.5rem 1rem;background:#fff}
-    #description{max-width:800px;margin:1.5rem auto;font-size:1rem;line-height:1.5}
+    body { font-family: sans-serif; padding: 2rem; background: #f0f0f0; }
+    select, table { margin: 1rem 0; padding: 0.5rem; font-size: 1rem; }
+    .description { margin-top: 2rem; padding: 1rem; background: #fff; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Tber スケール辞典</h1>
-  <div>
-    <select id="keySelect"></select>
-    <select id="groupSelect"></select>
-    <select id="scaleSelect"></select>
+  <h1>Tber Scale Viewer</h1>
+  <label for="key">Key:</label>
+  <select id="key"></select>
+
+  <label for="group">分類:</label>
+  <select id="group"></select>
+
+  <label for="scale">スケール:</label>
+  <select id="scale"></select>
+
+  <div id="output">
+    <table id="notes-table" border="1" cellpadding="8"></table>
+    <div id="description" class="description"></div>
   </div>
 
-  <table id="scaleTable"></table>
-  <div id="description"></div>
+  <script>
+    const data = {
+      "C": {
+        "メジャー": {
+          "メジャースケール": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["7", "B"]],
+            description: "Cメジャースケールは、明るく安定した印象を持つスケールです。すべての白鍵で構成されており、調性の基本とされます。"
+          },
+          "メジャーペンタトニック": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["5", "G"], ["6", "A"]],
+            description: "メジャーペンタトニックは5音で構成され、穏やかで安定感のある響きが特徴です。民謡やロックなど幅広いジャンルで使われます。"
+          }
+        },
+        "マイナー": {
+          "ナチュラルマイナー": {
+            notes: [["1", "C"], ["2", "D"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["♭6", "Ab"], ["♭7", "Bb"]],
+            description: "ナチュラルマイナースケールは、悲しげで内省的な雰囲気を持ちます。Cを基準とした場合、Eb・Ab・Bbが特徴です。"
+          }
+        }
+      }
+    };
 
-<script>
-let scaleData={};
+    const keySelect = document.getElementById("key");
+    const groupSelect = document.getElementById("group");
+    const scaleSelect = document.getElementById("scale");
+    const notesTable = document.getElementById("notes-table");
+    const descriptionBox = document.getElementById("description");
 
-fetch("scales.json").then(r=>r.json()).then(d=>{
-  scaleData=d;
-  initKeys();
-});
+    function updateKeyOptions() {
+      keySelect.innerHTML = "";
+      for (let key in data) {
+        const opt = document.createElement("option");
+        opt.value = key;
+        opt.textContent = key;
+        keySelect.appendChild(opt);
+      }
+    }
 
-function initKeys(){
-  const keySel=document.getElementById("keySelect");
-  keySel.innerHTML="";
-  Object.keys(scaleData).forEach(k=>{
-    const opt=document.createElement("option");
-    opt.value=k;opt.textContent=k;
-    keySel.appendChild(opt);
-  });
-  keySel.addEventListener("change",updateGroups);
-  document.getElementById("groupSelect").addEventListener("change",updateScales);
-  document.getElementById("scaleSelect").addEventListener("change",showScale);
-  updateGroups();
-}
+    function updateGroupOptions(key) {
+      groupSelect.innerHTML = "";
+      for (let group in data[key]) {
+        const opt = document.createElement("option");
+        opt.value = group;
+        opt.textContent = group;
+        groupSelect.appendChild(opt);
+      }
+    }
 
-function updateGroups(){
-  const key=document.getElementById("keySelect").value;
-  const groups=Object.keys(scaleData[key]);
-  const groupSel=document.getElementById("groupSelect");
-  groupSel.innerHTML="";
-  groups.forEach(g=>{
-    const opt=document.createElement("option");
-    opt.value=g;opt.textContent=g;
-    groupSel.appendChild(opt);
-  });
-  updateScales();
-}
+    function updateScaleOptions(key, group) {
+      scaleSelect.innerHTML = "";
+      for (let scale in data[key][group]) {
+        const opt = document.createElement("option");
+        opt.value = scale;
+        opt.textContent = scale;
+        scaleSelect.appendChild(opt);
+      }
+    }
 
-function updateScales(){
-  const key=document.getElementById("keySelect").value;
-  const group=document.getElementById("groupSelect").value;
-  const scaleSel=document.getElementById("scaleSelect");
-  scaleSel.innerHTML="";
-  if(!scaleData[key][group]) return;
-  Object.keys(scaleData[key][group]).forEach(s=>{
-    const opt=document.createElement("option");
-    opt.value=s;opt.textContent=s;
-    scaleSel.appendChild(opt);
-  });
-  showScale();
-}
+    function updateDisplay(key, group, scale) {
+      const notes = data[key][group][scale].notes;
+      const desc = data[key][group][scale].description;
+      notesTable.innerHTML = "<tr><th>度数</th><th>音名</th></tr>";
+      notes.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td>`;
+        notesTable.appendChild(tr);
+      });
+      descriptionBox.textContent = desc;
+    }
 
-function showScale(){
-  const key=document.getElementById("keySelect").value;
-  const group=document.getElementById("groupSelect").value;
-  const scale=document.getElementById("scaleSelect").value;
-  const tbl=document.getElementById("scaleTable");
-  const descDiv=document.getElementById("description");
-  if(!scaleData[key][group]||!scaleData[key][group][scale]){tbl.innerHTML="";descDiv.textContent="";return;}
-  const arr=scaleData[key][group][scale]; // array of note objects
-  const degrees=arr.map(o=>o.degree||"");
-  const notes=arr.map(o=>o.name||"");
-  const description=(arr[0]&&arr[0].description)?arr[0].description:"";
-  tbl.innerHTML="<tr>"+degrees.map(d=>`<th>${d}</th>`).join("")+"</tr>"+
-                "<tr>"+notes.map(n=>`<td>${n}</td>`).join("")+"</tr>";
-  descDiv.textContent=description;
-}
-</script>
+    keySelect.addEventListener("change", () => {
+      const prevGroup = groupSelect.value;
+      const prevScale = scaleSelect.value;
+      updateGroupOptions(keySelect.value);
+      if (data[keySelect.value][prevGroup]) {
+        groupSelect.value = prevGroup;
+        updateScaleOptions(keySelect.value, prevGroup);
+        if (data[keySelect.value][prevGroup][prevScale]) {
+          scaleSelect.value = prevScale;
+          updateDisplay(keySelect.value, prevGroup, prevScale);
+        }
+      }
+    });
+
+    groupSelect.addEventListener("change", () => {
+      updateScaleOptions(keySelect.value, groupSelect.value);
+      updateDisplay(keySelect.value, groupSelect.value, scaleSelect.value);
+    });
+
+    scaleSelect.addEventListener("change", () => {
+      updateDisplay(keySelect.value, groupSelect.value, scaleSelect.value);
+    });
+
+    // 初期化
+    updateKeyOptions();
+    updateGroupOptions("C");
+    updateScaleOptions("C", "メジャー");
+    updateDisplay("C", "メジャー", "メジャースケール");
+  </script>
 </body>
 </html>
