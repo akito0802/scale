@@ -4,112 +4,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tber - スケール辞典</title>
+  <title>Tber Scale Viewer</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin: 2em; }
-    select { margin: 0.5em; font-size: 1em; }
-    table { margin: auto; border-collapse: collapse; margin-top: 1em; }
-    th, td { border: 1px solid #ccc; padding: 0.5em 1em; }
-    #description { margin-top: 1em; max-width: 600px; margin-left: auto; margin-right: auto; }
+    body { font-family: sans-serif; padding: 2rem; background: #f0f0f0; }
+    select, table { margin: 1rem 0; padding: 0.5rem; font-size: 1rem; }
+    .description { margin-top: 2rem; padding: 1rem; background: #fff; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h1>Tberスケール辞典</h1>
-  <div>
-    <select id="keySelect">
-      <option value="C">C</option><option value="D">D</option><option value="E">E</option>
-      <option value="F">F</option><option value="G">G</option><option value="A">A</option>
-      <option value="B">B</option>
-    </select>
-    <select id="groupSelect">
-      <option value="major">メジャー</option>
-      <option value="minor">マイナー</option>
-      <option value="church">チャーチモード</option>
-      <option value="jazz">ジャズ</option>
-      <option value="ethnic">民族</option>
-    </select>
-    <select id="scaleSelect"></select>
+  <h1>Tber Scale Viewer</h1>
+  <label for="key">Key:</label>
+  <select id="key"></select>
+
+  <label for="group">分類:</label>
+  <select id="group"></select>
+
+  <label for="scale">スケール:</label>
+  <select id="scale"></select>
+
+  <div id="output">
+    <table id="notes-table" border="1" cellpadding="8"></table>
+    <div id="description" class="description"></div>
   </div>
-  <div id="tableArea"></div>
-  <div id="description"></div>
+
   <script>
-    const scaleData = {
-      major: {
-        "メジャースケール": {
-          degrees: ["1", "2", "3", "4", "5", "6", "7"],
-          notes:   ["C", "D", "E", "F", "G", "A", "B"],
-          description: "メジャースケールは明るく安定した音階で、ポップスやクラシックなど幅広いジャンルの基礎です。"
-        }
-      },
-      minor: {
-        "ナチュラルマイナー": {
-          degrees: ["1", "2", "♭3", "4", "5", "♭6", "♭7"],
-          notes:   ["C", "D", "E♭", "F", "G", "A♭", "B♭"],
-          description: "ナチュラルマイナースケールは哀愁漂う響きを持ち、ロックやジャズでも多用されます。"
-        }
-      },
-      church: {
-        "ドリアン": {
-          degrees: ["1", "2", "♭3", "4", "5", "6", "♭7"],
-          notes:   ["C", "D", "E♭", "F", "G", "A", "B♭"],
-          description: "ドリアンはマイナーながら明るさを感じるモードで、ジャズやファンクに最適です。"
-        }
-      },
-      jazz: {
-        "オルタード": {
-          degrees: ["1", "♭9", "#9", "3", "#11", "♭13", "♭7"],
-          notes:   ["C", "D♭", "D#", "E", "F#", "A♭", "B♭"],
-          description: "オルタードはドミナント7thコードにテンションを加えたジャズ特有のスケールです。"
-        }
-      },
-      ethnic: {
-        "エジプトスケール": {
-          degrees: ["1", "2", "♭3", "5", "♭6"],
-          notes:   ["C", "D", "E♭", "G", "A♭"],
-          description: "エジプトスケールは異国情緒あふれる旋律で、民族音楽やサウンドトラックに使用されます。"
+    const data = {
+      "C": {
+        "メジャー": {
+          "メジャースケール": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["4", "F"], ["5", "G"], ["6", "A"], ["7", "B"]],
+            description: "Cメジャースケールは、明るく安定した印象を持つスケールです。すべての白鍵で構成されており、調性の基本とされます。"
+          },
+          "メジャーペンタトニック": {
+            notes: [["1", "C"], ["2", "D"], ["3", "E"], ["5", "G"], ["6", "A"]],
+            description: "メジャーペンタトニックは5音で構成され、穏やかで安定感のある響きが特徴です。民謡やロックなど幅広いジャンルで使われます。"
+          }
+        },
+        "マイナー": {
+          "ナチュラルマイナー": {
+            notes: [["1", "C"], ["2", "D"], ["♭3", "Eb"], ["4", "F"], ["5", "G"], ["♭6", "Ab"], ["♭7", "Bb"]],
+            description: "ナチュラルマイナースケールは、悲しげで内省的な雰囲気を持ちます。Cを基準とした場合、Eb・Ab・Bbが特徴です。"
+          }
         }
       }
     };
 
-    const keySelect = document.getElementById("keySelect");
-    const groupSelect = document.getElementById("groupSelect");
-    const scaleSelect = document.getElementById("scaleSelect");
-    const tableArea = document.getElementById("tableArea");
-    const descArea = document.getElementById("description");
+    const keySelect = document.getElementById("key");
+    const groupSelect = document.getElementById("group");
+    const scaleSelect = document.getElementById("scale");
+    const notesTable = document.getElementById("notes-table");
+    const descriptionBox = document.getElementById("description");
 
-    function updateScales() {
-      const group = groupSelect.value;
-      const scales = scaleData[group];
-      scaleSelect.innerHTML = "";
-      for (let name in scales) {
+    function updateKeyOptions() {
+      keySelect.innerHTML = "";
+      for (let key in data) {
         const opt = document.createElement("option");
-        opt.value = name;
-        opt.textContent = name;
+        opt.value = key;
+        opt.textContent = key;
+        keySelect.appendChild(opt);
+      }
+    }
+
+    function updateGroupOptions(key) {
+      groupSelect.innerHTML = "";
+      for (let group in data[key]) {
+        const opt = document.createElement("option");
+        opt.value = group;
+        opt.textContent = group;
+        groupSelect.appendChild(opt);
+      }
+    }
+
+    function updateScaleOptions(key, group) {
+      scaleSelect.innerHTML = "";
+      for (let scale in data[key][group]) {
+        const opt = document.createElement("option");
+        opt.value = scale;
+        opt.textContent = scale;
         scaleSelect.appendChild(opt);
       }
-      updateTable();
     }
 
-    function updateTable() {
-      const group = groupSelect.value;
-      const scale = scaleSelect.value;
-      const scaleObj = scaleData[group][scale];
-      const table = `
-        <table>
-          <tr>${scaleObj.degrees.map(d => `<th>${d}</th>`).join('')}</tr>
-          <tr>${scaleObj.notes.map(n => `<td>${n}</td>`).join('')}</tr>
-        </table>
-      `;
-      tableArea.innerHTML = table;
-      descArea.textContent = scaleObj.description;
+    function updateDisplay(key, group, scale) {
+      const notes = data[key][group][scale].notes;
+      const desc = data[key][group][scale].description;
+      notesTable.innerHTML = "<tr><th>度数</th><th>音名</th></tr>";
+      notes.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td>`;
+        notesTable.appendChild(tr);
+      });
+      descriptionBox.textContent = desc;
     }
 
-    keySelect.addEventListener("change", () => updateTable());
-    groupSelect.addEventListener("change", updateScales);
-    scaleSelect.addEventListener("change", updateTable);
+    keySelect.addEventListener("change", () => {
+      const prevGroup = groupSelect.value;
+      const prevScale = scaleSelect.value;
+      updateGroupOptions(keySelect.value);
+      if (data[keySelect.value][prevGroup]) {
+        groupSelect.value = prevGroup;
+        updateScaleOptions(keySelect.value, prevGroup);
+        if (data[keySelect.value][prevGroup][prevScale]) {
+          scaleSelect.value = prevScale;
+          updateDisplay(keySelect.value, prevGroup, prevScale);
+        }
+      }
+    });
+
+    groupSelect.addEventListener("change", () => {
+      updateScaleOptions(keySelect.value, groupSelect.value);
+      updateDisplay(keySelect.value, groupSelect.value, scaleSelect.value);
+    });
+
+    scaleSelect.addEventListener("change", () => {
+      updateDisplay(keySelect.value, groupSelect.value, scaleSelect.value);
+    });
 
     // 初期化
-    updateScales();
+    updateKeyOptions();
+    updateGroupOptions("C");
+    updateScaleOptions("C", "メジャー");
+    updateDisplay("C", "メジャー", "メジャースケール");
   </script>
 </body>
 </html>
