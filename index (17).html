@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Tber スケール辞典</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{font-family:sans-serif;background:#eef3f8;margin:0;padding:2rem;text-align:center}
+    h1{margin-bottom:1rem}
+    select{font-size:1.1rem;margin:.5rem;padding:.4rem .6rem}
+    table{margin:1.5rem auto;border-collapse:collapse}
+    th,td{border:1px solid #bbb;padding:.5rem 1rem;background:#fff}
+    #description{max-width:800px;margin:1.5rem auto;font-size:1rem;line-height:1.5}
+  </style>
+</head>
+<body>
+  <h1>Tber スケール辞典</h1>
+  <div>
+    <select id="keySelect"></select>
+    <select id="groupSelect"></select>
+    <select id="scaleSelect"></select>
+  </div>
+
+  <table id="scaleTable"></table>
+  <div id="description"></div>
+
+<script>
+let scaleData = {};
+const keySelect = document.getElementById("keySelect");
+const groupSelect = document.getElementById("groupSelect");
+const scaleSelect = document.getElementById("scaleSelect");
+
+fetch("scales.json")
+  .then(r => r.json())
+  .then(d => { scaleData = d; initUI(); });
+
+function initUI(){
+  Object.keys(scaleData).forEach(k=>{
+    const opt = document.createElement("option");
+    opt.value = k;
+    opt.textContent = k;
+    keySelect.appendChild(opt);
+  });
+  keySelect.addEventListener("change", handleKeyChange);
+  groupSelect.addEventListener("change", handleGroupChange);
+  scaleSelect.addEventListener("change", showScale);
+  handleKeyChange(); // initial
+}
+
+function handleKeyChange(){
+  const key = keySelect.value;
+  const prevGroup = groupSelect.value;
+  populateGroups(key, prevGroup);
+}
+
+function handleGroupChange(){
+  const key = keySelect.value;
+  const prevScale = scaleSelect.value;
+  populateScales(key, groupSelect.value, prevScale);
+}
+
+function populateGroups(key, selectedGroup){
+  const groups = Object.keys(scaleData[key]);
+  groupSelect.innerHTML = "";
+  groups.forEach(g=>{
+    const opt = document.createElement("option");
+    opt.value = g;
+    opt.textContent = g;
+    groupSelect.appendChild(opt);
+  });
+  if(selectedGroup && groups.includes(selectedGroup)){
+    groupSelect.value = selectedGroup;
+  }
+  populateScales(key, groupSelect.value);
+}
+
+function populateScales(key, group, selectedScale){
+  const scales = Object.keys(scaleData[key][group]);
+  scaleSelect.innerHTML = "";
+  scales.forEach(s=>{
+    const opt = document.createElement("option");
+    opt.value = s;
+    opt.textContent = s;
+    scaleSelect.appendChild(opt);
+  });
+  if(selectedScale && scales.includes(selectedScale)){
+    scaleSelect.value = selectedScale;
+  }
+  showScale();
+}
+
+function showScale(){
+  const key   = keySelect.value;
+  const group = groupSelect.value;
+  const scaleName = scaleSelect.value;
+  const tbl = document.getElementById("scaleTable");
+  const descDiv = document.getElementById("description");
+
+  if(!(scaleData[key] && scaleData[key][group] && scaleData[key][group][scaleName])){
+    tbl.innerHTML = "";
+    descDiv.textContent = "";
+    return;
+  }
+  const arr = scaleData[key][group][scaleName];
+  const degrees = arr.map(o=>o.degree || "");
+  const notes   = arr.map(o=>o.name || "");
+  const description = (arr[0] && arr[0].description) || "";
+  tbl.innerHTML = "<tr>" + degrees.map(d=>`<th>${d}</th>`).join("") + "</tr>" +
+                  "<tr>" + notes.map(n=>`<td>${n}</td>`).join("") + "</tr>";
+  descDiv.textContent = description;
+}
+</script>
+</body>
+</html>
