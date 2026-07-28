@@ -11,8 +11,10 @@
     table{margin:1.5rem auto;border-collapse:collapse}
     th,td{border:1px solid #bbb;padding:.5rem 1rem;background:#fff}
     #description{max-width:800px;margin:1.5rem auto;font-size:1rem;line-height:1.5}
-    .topbar{display:flex;align-items:center;justify-content:center;position:relative;max-width:900px;margin:0 auto 1rem}
+    .topbar{display:flex;align-items:center;justify-content:center;position:relative;max-width:900px;margin:0 auto 1rem;min-height:44px}
     .menu-button{position:absolute;left:0;display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid rgba(0,0,0,.12);border-radius:12px;background:#fff;color:#1f2937;font-size:1.35rem;cursor:pointer}
+    .quick-switch{position:absolute;right:0;display:flex;align-items:center;gap:7px;min-height:42px;padding:0 14px;border:1px solid rgba(0,0,0,.12);border-radius:12px;background:#fff;color:#1f2937;text-decoration:none;font-size:.9rem;font-weight:700;box-sizing:border-box}
+    .quick-switch:active{transform:scale(.98)}
     .menu-overlay{position:fixed;inset:0;z-index:80;background:rgba(17,24,39,.35);opacity:0;pointer-events:none;transition:opacity .2s ease}
     .menu-overlay.open{opacity:1;pointer-events:auto}
     .side-menu{position:fixed;top:0;left:0;z-index:90;width:min(82vw,300px);height:100%;padding:24px 18px;background:#fff;box-shadow:14px 0 34px rgba(0,0,0,.18);transform:translateX(-105%);transition:transform .22s ease;text-align:left;box-sizing:border-box}
@@ -24,7 +26,7 @@
     .menu-link:hover,.menu-link:focus{background:#eef3f8}
     .menu-link.current{background:#dfeaf5}
     .menu-icon{width:28px;text-align:center;font-size:1.15rem}
-    @media(max-width:680px){body{padding:1rem}.topbar{justify-content:flex-start;padding-left:52px}.topbar h1{font-size:1.4rem;text-align:left}.menu-button{width:38px;height:38px}}
+    @media(max-width:680px){body{padding:1rem}.topbar{justify-content:center;padding:0 52px}.topbar h1{font-size:1.25rem;line-height:1.25}.menu-button{width:38px;height:38px}.quick-switch{min-height:38px;width:38px;padding:0;justify-content:center;font-size:0}.quick-switch span:first-child{font-size:1.1rem}}
   </style>
 </head>
 <body>
@@ -38,6 +40,7 @@
   <div class="topbar">
     <button id="menuOpenBtn" class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">☰</button>
     <h1>Tber スケール辞典</h1>
+    <a class="quick-switch" href="https://akito0802.github.io/NEET-note/" aria-label="NEET NOTEへ移動"><span>📝</span><span>NEET NOTE</span></a>
   </div>
   <div>
     <select id="keySelect"></select>
