@@ -37,6 +37,7 @@
     <a class="menu-link" href="https://akito0802.github.io/NEET-note/"><span class="menu-icon">📝</span><span>ノート</span></a>
     <a class="menu-link current" href="./"><span class="menu-icon">🎸</span><span>スケール</span></a>
     <a class="menu-link" href="https://akito0802.github.io/-h/"><span class="menu-icon">🎵</span><span>指板</span></a>
+    <a class="menu-link" href="https://akito0802.github.io/Cordhyo-/theory.html"><span class="menu-icon">📚</span><span>理論</span></a>
   </nav>
 
   <div class="topbar">
@@ -135,7 +136,6 @@ function showScale(){
   const scaleName = scaleSelect.value;
   const tbl = document.getElementById("scaleTable");
   const descDiv = document.getElementById("description");
-
   if(!(scaleData[key] && scaleData[key][group] && scaleData[key][group][scaleName])){
     tbl.innerHTML = "";
     descDiv.textContent = "";
