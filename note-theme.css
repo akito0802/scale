@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+:root{--bg:#d9c7a8;--paper:#fff;--text:#1d1d1f;--muted:#6e6e73;--line:#dfeaf7;--margin-line:rgba(232,96,96,.42);--border:#e5e5ea;--accent:#007aff;--shadow:0 10px 30px rgba(0,0,0,.07)}
+html{min-height:100%;background:var(--bg)}
+body{min-height:100vh;color:var(--text)!important;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue","Hiragino Sans","Yu Gothic",sans-serif!important;background:linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12)),repeating-linear-gradient(90deg,rgba(91,67,37,.025) 0 1px,transparent 1px 4px),var(--bg)!important;padding:28px 18px 64px!important}
+.topbar{width:min(100%,980px);max-width:980px!important;margin:0 auto 22px!important}
+h1{margin:0!important;font-family:"Hannotate SC","Chalkboard SE",-apple-system,sans-serif;font-size:clamp(2rem,7vw,3rem);letter-spacing:-.03em}
+body>div:not(.menu-overlay):not(.topbar){width:min(100%,920px);margin:0 auto 16px;padding:18px 22px 18px 34px;background:linear-gradient(90deg,transparent 0 22px,var(--margin-line) 22px 23px,transparent 23px),repeating-linear-gradient(to bottom,var(--paper) 0 31px,var(--line) 31px 32px);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
+select{font:inherit!important;margin:.35rem!important;padding:11px 13px!important;color:var(--text)!important;border:1px solid rgba(229,229,234,.95)!important;border-radius:11px!important;background:rgba(255,255,255,.92)!important;outline:none}
+select:focus{border-color:rgba(0,122,255,.5)!important;box-shadow:0 0 0 4px rgba(0,122,255,.1)}
+table{width:min(100%,920px);margin:18px auto!important;border-collapse:separate!important;border-spacing:0;overflow:hidden;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+th,td{border:0!important;border-right:1px solid var(--border)!important;border-bottom:1px solid var(--border)!important;padding:12px 14px!important;background:rgba(255,255,255,.94)!important}
+th:last-child,td:last-child{border-right:0!important}
+#description{width:min(100%,920px);max-width:920px!important;margin:18px auto!important;padding:22px 24px 22px 38px;text-align:left;background:linear-gradient(90deg,transparent 0 25px,var(--margin-line) 25px 26px,transparent 26px),repeating-linear-gradient(to bottom,var(--paper) 0 31px,var(--line) 31px 32px);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);color:var(--muted);min-height:76px}
+.menu-button,.quick-switch{background:rgba(255,255,255,.9)!important;border:1px solid var(--border)!important;box-shadow:var(--shadow)}
+.side-menu{background:#fffdf8!important}.menu-link.current{background:#e9e1d4!important}.menu-link:hover,.menu-link:focus{background:#f2eee6!important}
+@media(max-width:680px){body{padding:18px 12px 42px!important}body>div:not(.menu-overlay):not(.topbar){padding:16px 10px 16px 28px}select{width:calc(100% - .7rem);margin:.35rem!important}#description{padding:18px 16px 18px 32px}}
