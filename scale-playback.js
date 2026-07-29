@@ -77,13 +77,24 @@
     });
   }
 
+  function shuffled(values) {
+    const result = [...values];
+    for (let i = result.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
   function playSequence(mode = 'up') {
     const notes = currentScaleNotes();
     if (!notes.length) return;
+    stopPlayback();
     const token = ++playbackToken;
     let sequence = notes;
     if (mode === 'down') sequence = [...notes].reverse();
     if (mode === 'roundtrip') sequence = [...notes, ...notes.slice(0, -1).reverse().slice(1)];
+    if (mode === 'random') sequence = shuffled(notes.slice(0, -1));
 
     const ctx = getAudioContext();
     const start = ctx.currentTime + 0.04;
@@ -115,9 +126,10 @@
         <button type="button" data-scale-play="up">▶ 上昇</button>
         <button type="button" data-scale-play="down">◀ 下降</button>
         <button type="button" data-scale-play="roundtrip">↕ 往復</button>
+        <button type="button" data-scale-play="random">🔀 ランダム</button>
         <button type="button" data-scale-play="stop">■ 停止</button>
       </div>
-      <small>ピアノ音で選択中のスケールを確認できるよ</small>`;
+      <small>キー・グループ・スケールを変えると自動で停止するよ</small>`;
     table.insertAdjacentElement('beforebegin', controls);
 
     controls.addEventListener('click', event => {
@@ -136,6 +148,7 @@
       cell.classList.add('playable-note');
       cell.title = 'タップして音を鳴らす';
       cell.onclick = () => {
+        stopPlayback();
         const midi = noteToMidi(cell.textContent, previous);
         if (midi != null) pianoTone(midi, getAudioContext().currentTime + 0.02, 1.1, 0.14);
       };
@@ -157,6 +170,10 @@
     @media(max-width:560px){.scale-playback-buttons button{flex:1;min-width:42%}}
   `;
   document.head.appendChild(style);
+
+  ['keySelect', 'groupSelect', 'scaleSelect'].forEach(id => {
+    document.getElementById(id)?.addEventListener('change', stopPlayback);
+  });
 
   const table = document.getElementById('scaleTable');
   if (table) new MutationObserver(makeNoteCellsPlayable).observe(table, { childList: true, subtree: true });
