@@ -44,8 +44,6 @@ jobs:
               n = flats.get(n, n)
               return chrom.index(n) if n in chrom else None
 
-          # Existing interval signatures are protected, so no existing scale is replaced
-          # and no identical pitch collection is added for the same key.
           signatures = {k:set() for k in data}
           for key, groups in data.items():
               root = chrom.index(key)
@@ -68,7 +66,6 @@ jobs:
           keys = [k for k in chrom if k in data]
           serial = 1
           candidates = []
-          # Named-scale candidates first.
           named = [
               ('クロマティック', tuple(range(12))),
               ('オーギュメント', (0,3,4,7,8,11)),
@@ -93,8 +90,6 @@ jobs:
           ]
           candidates.extend(('名称音階', name, sig) for name, sig in named)
 
-          # Then add unique modern/synthetic pitch collections. These are clearly
-          # labelled rather than presented as traditional named scales.
           for size in (5, 6, 7, 8, 9):
               for rest in itertools.combinations(range(1,12), size-1):
                   sig = (0,) + rest
@@ -145,3 +140,4 @@ jobs:
           git add scales.json
           git commit -m 'スケール辞典を2000件まで拡張 [skip ci]'
           git push
+# retrigger: 2026-07-30T19:24+09:00
