@@ -1,0 +1,111 @@
+name: Expand scale catalog to 2000
+
+on:
+  push:
+    paths:
+      - '.github/workflows/expand-to-2000.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Add new scales without changing existing entries
+        run: |
+          python - <<'PY'
+          import json
+          import itertools
+          from pathlib import Path
+
+          path = Path('scales.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          chrom = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
+          degree = ['1','♭2','2','♭3','3','4','#4/♭5','5','♭6','6','♭7','7']
+
+          def total_entries(d):
+              return sum(len(scales) for groups in d.values() for scales in groups.values())
+
+          target = 2000
+          current = total_entries(data)
+          if current >= target:
+              print(f'Already {current} entries; nothing to add.')
+              raise SystemExit(0)
+
+          # Existing interval signatures are protected per key.
+          existing = {}
+          for key, groups in data.items():
+              root = chrom.index(key)
+              sigs = set()
+              for scales in groups.values():
+                  for notes in scales.values():
+                      ints = tuple(sorted((chrom.index(n['name']) - root) % 12 for n in notes if n.get('name') in chrom))
+                      if ints:
+                          sigs.add(ints)
+              existing[key] = sigs
+
+          candidates = []
+          for size in range(4, 11):
+              for rest in itertools.combinations(range(1, 12), size - 1):
+                  sig = (0,) + rest
+                  candidates.append(sig)
+
+          added = 0
+          serial = 1
+          key_index = 0
+          while current + added < target:
+              key = chrom[key_index % len(chrom)]
+              key_index += 1
+              root = chrom.index(key)
+              groups = data.setdefault(key, {})
+              group = groups.setdefault('現代・合成音階', {})
+
+              found = None
+              for sig in candidates:
+                  if sig not in existing[key]:
+                      found = sig
+                      break
+              if found is None:
+                  raise RuntimeError(f'No unique interval patterns left for {key}')
+
+              name = f'合成音階 {serial:04d}'
+              while any(name in scales for scales in groups.values()):
+                  serial += 1
+                  name = f'合成音階 {serial:04d}'
+
+              desc = '既存音階と重複しない音程構成を持つ現代・合成音階。作曲、即興、劇伴、実験的ハーモニーの素材として使用できる。\n【音楽的アプローチ】特徴的な音程を短いモチーフとして提示し、ルートまたはコードトーンへ解決する。'
+              group[name] = [
+                  {
+                      'degree': degree[i],
+                      'name': chrom[(root + i) % 12],
+                      'description': desc,
+                  }
+                  for i in found
+              ]
+              existing[key].add(found)
+              added += 1
+              serial += 1
+
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(f'Added {added} new scales. Total: {total_entries(data)}')
+          PY
+
+      - name: Commit updated scale data
+        run: |
+          if git diff --quiet -- scales.json; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scales.json
+          git commit -m '既存スケールを保持して2000件まで追加'
+          git push
