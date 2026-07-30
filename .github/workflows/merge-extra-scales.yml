@@ -1,0 +1,60 @@
+name: Merge extra scales
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - extra-scales.js
+      - .github/workflows/merge-extra-scales.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Add only missing scales
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const vm = require('vm');
+          const data = JSON.parse(fs.readFileSync('scales.json', 'utf8'));
+          const sandbox = { window: {} };
+          vm.runInNewContext(fs.readFileSync('extra-scales.js', 'utf8'), sandbox);
+          const extras = sandbox.window.NEET_EXTRA_SCALES || [];
+          const chrom = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+          let added = 0;
+          for (const key of Object.keys(data)) {
+            const root = chrom.indexOf(key);
+            if (root < 0) continue;
+            for (const [group, name, intervals, degrees, description] of extras) {
+              data[key][group] ??= {};
+              if (data[key][group][name]) continue;
+              data[key][group][name] = intervals.map((interval, index) => ({
+                degree: degrees[index],
+                name: chrom[(root + interval) % 12],
+                description: description + '\n【音楽的アプローチ】特徴音を短く提示し、ルートまたはコードトーンへ自然に解決する。'
+              }));
+              added++;
+            }
+          }
+          fs.writeFileSync('scales.json', JSON.stringify(data, null, 2) + '\n');
+          console.log(`Added ${added} missing scale entries. Existing entries were not changed.`);
+          NODE
+      - name: Commit merged scales
+        run: |
+          if git diff --quiet -- scales.json; then
+            echo "No new scales to add"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scales.json
+          git commit -m "新しいスケールだけを追加"
+          git push
