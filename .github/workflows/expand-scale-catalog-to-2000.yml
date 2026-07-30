@@ -1,0 +1,147 @@
+name: Expand scale catalog to 2000
+
+on:
+  push:
+    paths:
+      - '.github/workflows/expand-scale-catalog-to-2000.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add only missing scale entries
+        run: |
+          python - <<'PY'
+          import itertools
+          import json
+          import re
+          from pathlib import Path
+
+          path = Path('scales.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          chrom = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
+          degree = {
+              0:'1',1:'♭2',2:'2',3:'♭3',4:'3',5:'4',
+              6:'#4/♭5',7:'5',8:'♭6',9:'6',10:'♭7',11:'7'
+          }
+
+          def total_entries():
+              return sum(len(scales) for groups in data.values() for scales in groups.values())
+
+          def note_pc(note):
+              m = re.match(r'^([A-G](?:#|b)?)', str(note))
+              if not m:
+                  return None
+              n = m.group(1)
+              flats = {'Db':'C#','Eb':'D#','Gb':'F#','Ab':'G#','Bb':'A#'}
+              n = flats.get(n, n)
+              return chrom.index(n) if n in chrom else None
+
+          # Existing interval signatures are protected, so no existing scale is replaced
+          # and no identical pitch collection is added for the same key.
+          signatures = {k:set() for k in data}
+          for key, groups in data.items():
+              root = chrom.index(key)
+              for scales in groups.values():
+                  for notes in scales.values():
+                      pcs = []
+                      for item in notes:
+                          pc = note_pc(item.get('name'))
+                          if pc is not None:
+                              pcs.append((pc-root)%12)
+                      if pcs:
+                          signatures[key].add(tuple(sorted(set(pcs))))
+
+          target = 2000
+          before = total_entries()
+          if before >= target:
+              print(f'Already has {before} entries; nothing changed.')
+              raise SystemExit(0)
+
+          keys = [k for k in chrom if k in data]
+          serial = 1
+          candidates = []
+          # Named-scale candidates first.
+          named = [
+              ('クロマティック', tuple(range(12))),
+              ('オーギュメント', (0,3,4,7,8,11)),
+              ('トリトーン', (0,1,4,6,7,10)),
+              ('リーディング・ホールトーン', (0,2,4,6,8,10,11)),
+              ('ラピュタ', (0,2,3,6,7,8,11)),
+              ('メジャー・ロクリアン', (0,2,4,5,6,8,10)),
+              ('ドミナント・ディミニッシュ', (0,1,3,4,6,7,9,10)),
+              ('補助ディミニッシュ', (0,2,3,5,6,8,9,11)),
+              ('スクライアビン', (0,1,4,7,9)),
+              ('プロメテウス・ネアポリタン', (0,1,4,6,9,10)),
+              ('六音ブルース', (0,3,5,6,7,10)),
+              ('メジャー・ブルース', (0,2,3,4,7,9)),
+              ('マイナー・シックス・ペンタトニック', (0,3,5,7,9)),
+              ('ドミナント・ペンタトニック', (0,2,4,7,10)),
+              ('リディアン・ペンタトニック', (0,2,4,6,9)),
+              ('フリジアン・ペンタトニック', (0,1,5,7,8)),
+              ('ロクリアン・ペンタトニック', (0,1,5,6,10)),
+              ('イクイノックス', (0,2,3,5,7,8,10)),
+              ('パーシチェッティ', (0,1,4,5,6,9,10)),
+              ('エニグマティック・マイナー', (0,1,3,6,8,10,11)),
+          ]
+          candidates.extend(('名称音階', name, sig) for name, sig in named)
+
+          # Then add unique modern/synthetic pitch collections. These are clearly
+          # labelled rather than presented as traditional named scales.
+          for size in (5, 6, 7, 8, 9):
+              for rest in itertools.combinations(range(1,12), size-1):
+                  sig = (0,) + rest
+                  candidates.append(('現代・合成音階カタログ', None, sig))
+
+          idx = 0
+          while total_entries() < target and idx < len(candidates) * max(1, len(keys)):
+              category, fixed_name, sig = candidates[idx % len(candidates)]
+              key = keys[(idx // len(candidates)) % len(keys)]
+              idx += 1
+              if sig in signatures[key]:
+                  continue
+              root = chrom.index(key)
+              group = data[key].setdefault(category, {})
+              if fixed_name:
+                  name = fixed_name
+                  if name in group:
+                      continue
+              else:
+                  formula = '-'.join(str(x) for x in sig)
+                  name = f'合成音階 {serial:04d} [{formula}]'
+                  serial += 1
+              desc = (
+                  '音程集合から構成した現代・合成音階。既存スケールと同一の音程式は除外済み。'
+                  f' 音程式: {"・".join(degree[x] for x in sig)}。'
+                  '【音楽的アプローチ】ドローンやモーダルなコード上で特徴音を短く提示し、ルートまたはコードトーンへ解決する。'
+              )
+              group[name] = [
+                  {'degree': degree[x], 'name': chrom[(root+x)%12], 'description': desc}
+                  for x in sig
+              ]
+              signatures[key].add(sig)
+
+          after = total_entries()
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(f'Expanded from {before} to {after} entries.')
+          if after < target:
+              raise SystemExit(f'Could not reach {target}; stopped at {after}')
+          PY
+      - name: Commit expanded catalog
+        run: |
+          if git diff --quiet -- scales.json; then
+            echo 'No changes needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scales.json
+          git commit -m 'スケール辞典を2000件まで拡張 [skip ci]'
+          git push
