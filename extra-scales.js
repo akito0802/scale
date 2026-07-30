@@ -16,4 +16,56 @@ for(const size of [5,6,7,8,9,10,11]){
   if(out.length>=220) break;
 }
 window.NEET_EXTRA_SCALES=out;
+
+// NEET NOTE全体と共通のテーマ設定
+const THEME_KEY='neet-note-theme';
+const root=document.documentElement;
+const metaTheme=document.querySelector('meta[name="theme-color"]');
+const themeButton=document.getElementById('theme');
+const systemDark=()=>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+const getTheme=()=>{
+  const saved=localStorage.getItem(THEME_KEY);
+  return saved==='light'||saved==='dark'?saved:(systemDark()?'dark':'light');
+};
+const applyTheme=theme=>{
+  root.dataset.theme=theme;
+  root.style.colorScheme=theme;
+  if(metaTheme) metaTheme.setAttribute('content',theme==='dark'?'#141311':'#f4efe6');
+  if(themeButton){
+    const dark=theme==='dark';
+    themeButton.textContent=dark?'☀️':'🌙';
+    themeButton.title=dark?'ライトモードに切り替え':'ダークモードに切り替え';
+    themeButton.setAttribute('aria-label',themeButton.title);
+    themeButton.setAttribute('aria-pressed',String(dark));
+  }
+};
+applyTheme(getTheme());
+if(themeButton){
+  themeButton.addEventListener('click',event=>{
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const next=root.dataset.theme==='dark'?'light':'dark';
+    localStorage.setItem(THEME_KEY,next);
+    applyTheme(next);
+  },true);
+}
+if(window.matchMedia){
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',event=>{
+    if(!localStorage.getItem(THEME_KEY)) applyTheme(event.matches?'dark':'light');
+  });
+}
+
+// ダークモード時の文字・操作部品の視認性を補強
+const themeStyle=document.createElement('style');
+themeStyle.textContent=`
+html[data-theme="dark"] body{background:#141311;color:#f8f4ec}
+html[data-theme="dark"] .card,html[data-theme="dark"] details,html[data-theme="dark"] .menu{background:#211f1b;color:#f8f4ec;border-color:#514a40}
+html[data-theme="dark"] .box,html[data-theme="dark"] .rating,html[data-theme="dark"] .progression,html[data-theme="dark"] .phrase,html[data-theme="dark"] .mini,html[data-theme="dark"] .note,html[data-theme="dark"] .pill{background:#2d2924;color:#f8f4ec;border-color:#595146}
+html[data-theme="dark"] select,html[data-theme="dark"] option,html[data-theme="dark"] .btn,html[data-theme="dark"] .icon{background:#302c27;color:#fffaf2;border-color:#62594d}
+html[data-theme="dark"] .btn.primary{background:#b58f55;color:#14110d;border-color:#c6a269}
+html[data-theme="dark"] .brand small,html[data-theme="dark"] .eyebrow,html[data-theme="dark"] .aliases,html[data-theme="dark"] .degree,html[data-theme="dark"] .box p,html[data-theme="dark"] .mini span,html[data-theme="dark"] .empty{color:#d4ccbf}
+html[data-theme="dark"] summary,html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] b,html[data-theme="dark"] .menu a{color:#fffaf2}
+html[data-theme="dark"] .menu a:hover{background:#38332d}
+`;
+document.head.appendChild(themeStyle);
 })();
