@@ -47,4 +47,42 @@ themeButton.addEventListener('click',()=>{
   localStorage.setItem(THEME_KEY,next);
   applyTheme(next);
 });
+
+// 初めて使う人向けの選択ガイド
+const guideStyle=document.createElement('style');
+guideStyle.textContent=`
+  .toolbar{align-items:start}.select-guide{display:grid;gap:6px;min-width:0}.select-guide label{display:flex;align-items:center;gap:7px;color:var(--ink);font-size:.82rem;font-weight:900}.guide-help{display:inline-grid;place-items:center;width:20px;height:20px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--panel2);color:var(--muted);font-size:.72rem;font-weight:900;cursor:pointer}.guide-text{margin:0;color:var(--muted);font-size:.72rem;line-height:1.55}.guide-detail{display:none;margin:0;padding:10px 11px;border:1px solid var(--line);border-radius:11px;background:var(--panel2);color:var(--muted);font-size:.74rem;line-height:1.6}.select-guide.open .guide-detail{display:block}.selection-guide-note{margin:13px 0 0;padding:11px 12px;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:var(--panel2);color:var(--muted);font-size:.78rem;line-height:1.65}.actions .tempo-guide{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.75rem}.compare-guide{margin:-4px 0 10px;color:var(--muted);font-size:.78rem;line-height:1.6}@media(max-width:760px){.guide-text{font-size:.76rem}.selection-guide-note{font-size:.8rem}}
+`;
+document.head.appendChild(guideStyle);
+
+const guides=[
+  {id:'key',label:'キー',short:'曲や演奏の中心となる音を選択',detail:'選んだ音がルート音になります。迷ったら、演奏する曲のキーと同じ音を選んでください。例：Cメジャーの曲なら「C」。'},
+  {id:'group',label:'種類・ジャンル',short:'スケールを系統ごとに絞り込み',detail:'メジャー系、マイナー系、ジャズ、日本音階など、響きや理論上の仲間で分類しています。目的が決まっていない場合は、まず基本的な系統から探すのがおすすめです。'},
+  {id:'scale',label:'スケール',short:'実際に表示・再生する音階を選択',detail:'選択したキーを基準に、そのスケールの構成音・度数・特徴・対応コードなどを表示します。名前が分からない場合は、種類を切り替えながら概要を確認してください。'}
+];
+const toolbar=document.querySelector('.toolbar');
+guides.forEach(({id,label,short,detail})=>{
+  const select=document.getElementById(id);
+  if(!select||select.closest('.select-guide'))return;
+  const box=document.createElement('div');
+  box.className='select-guide';
+  const labelEl=document.createElement('label');
+  labelEl.htmlFor=id;
+  labelEl.innerHTML=`<span>${label}</span><button class="guide-help" type="button" aria-label="${label}の詳しい説明を表示" aria-expanded="false">?</button>`;
+  const shortEl=document.createElement('p');shortEl.className='guide-text';shortEl.textContent=short;
+  const detailEl=document.createElement('p');detailEl.className='guide-detail';detailEl.textContent=detail;
+  select.parentNode.insertBefore(box,select);box.append(labelEl,select,shortEl,detailEl);
+  labelEl.querySelector('.guide-help').addEventListener('click',e=>{const open=box.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',String(open));e.currentTarget.setAttribute('aria-label',`${label}の詳しい説明を${open?'閉じる':'表示'}`)});
+});
+if(toolbar&&!document.querySelector('.selection-guide-note')){
+  const note=document.createElement('p');note.className='selection-guide-note';note.textContent='使い方：①キーを選ぶ → ②種類・ジャンルで絞る → ③スケールを選ぶ。下の音名を押さえたり再生したりして、響きを確認できます。';toolbar.parentElement.appendChild(note);
+}
+const tempo=document.getElementById('tempo');
+if(tempo&&!tempo.previousElementSibling?.classList.contains('tempo-guide')){
+  const text=document.createElement('span');text.className='tempo-guide';text.textContent='再生速度：';tempo.parentNode.insertBefore(text,tempo);
+}
+const compare=document.querySelector('.compare');
+if(compare&&!compare.querySelector('.compare-guide')){
+  const p=document.createElement('p');p.className='compare-guide';p.textContent='別のスケールを選ぶと、構成音や特徴の違いを並べて比較できます。似たスケールの使い分けを知りたいときに便利です。';compare.querySelector('h2')?.insertAdjacentElement('afterend',p);
+}
 })();
