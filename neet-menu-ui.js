@@ -10,6 +10,7 @@ const items=[
  ['https://akito0802.github.io/NEET-note/tools.html','🧰','制作ツール','tools'],
  ['https://akito0802.github.io/NEET-note/calendar.html','📅','制作カレンダー','calendar'],
  ['https://akito0802.github.io/Cordhyo-/','📚','コード辞典','chord'],
+ ['https://akito0802.github.io/Cordhyo-/mix-lab.html','🎛️','Mix Lab','mixlab'],
  ['https://akito0802.github.io/scale/','🎸','スケール辞典','scale'],
  ['https://akito0802.github.io/-h/','🎵','指板','fretboard'],
  ['https://akito0802.github.io/NEET-note/about.html','ℹ️','NEET NOTEについて','about']
