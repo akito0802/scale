@@ -14,17 +14,21 @@ jobs:
       - run: |
           python - <<'PY'
           from pathlib import Path
-          tag='<script src="https://akito0802.github.io/NEET-note/global-menu.js?v=20260812-1"></script>'
+          global_tag='<script src="https://akito0802.github.io/NEET-note/global-menu.js?v=20260812-1"></script>'
+          dedupe_tag='<script src="https://akito0802.github.io/NEET-note/menu-dedupe.js?v=20260812-1"></script>'
           for p in Path('.').rglob('*.html'):
               s=p.read_text(encoding='utf-8')
-              if 'global-menu.js' in s: continue
-              s=s.replace('</body>',tag+'\n</body>',1) if '</body>' in s else s+'\n'+tag+'\n'
-              p.write_text(s,encoding='utf-8')
+              original=s
+              if 'global-menu.js' not in s:
+                  s=s.replace('</body>',global_tag+'\n</body>',1) if '</body>' in s else s+'\n'+global_tag+'\n'
+              if 'menu-dedupe.js' not in s:
+                  s=s.replace('</body>',dedupe_tag+'\n</body>',1) if '</body>' in s else s+'\n'+dedupe_tag+'\n'
+              if s!=original:p.write_text(s,encoding='utf-8')
           PY
       - run: |
           if git diff --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Apply shared NEETNOTE menu to all pages"
+          git commit -m "Keep one shared NEETNOTE hamburger menu"
           git push
