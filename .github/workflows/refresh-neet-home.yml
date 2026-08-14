@@ -1,0 +1,49 @@
+name: Refresh NEETNOTE home routing
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-neet-home.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix home links and shared menu build
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          ROOT='https://akito0802.github.io/NEET-note/'
+          LOADER='<script src="https://akito0802.github.io/NEET-note/global-menu-v4.js?v=20260814-7"></script>'
+          anchor=re.compile(r'(<a\b[^>]*\bhref=["\'])'+re.escape(ROOT)+r'(["\'][^>]*>)(.*?)(</a>)',re.I|re.S)
+          def replace_anchor(m):
+              text=re.sub(r'<[^>]+>',' ',m.group(3))
+              target=ROOT+'?mode=note' if 'ノート' in text else ROOT+'home.html'
+              return m.group(1)+target+m.group(2)+m.group(3)+m.group(4)
+          changed=[]
+          for p in Path('.').rglob('*.html'):
+              if '.git' in p.parts: continue
+              s=p.read_text(encoding='utf-8'); old=s
+              s=anchor.sub(replace_anchor,s)
+              s=re.sub(r'https://akito0802\.github\.io/NEET-note/global-menu-v4\.js\?v=[^"\']+',ROOT+'global-menu-v4.js?v=20260814-7',s)
+              s=re.sub(r'neet-menu-ui\.js\?v=[^"\']+','neet-menu-ui.js?v=20260814-home1',s)
+              if 'global-menu-v4.js' not in s:
+                  s=s.replace('</body>',LOADER+'\n</body>',1) if '</body>' in s else s+'\n'+LOADER+'\n'
+              if s!=old:
+                  p.write_text(s,encoding='utf-8'); changed.append(str(p))
+          print('Updated',len(changed),'HTML files')
+          for p in changed: print(p)
+          PY
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Route home buttons to dedicated NEETNOTE home"
+          git pull --rebase origin main
+          git push
