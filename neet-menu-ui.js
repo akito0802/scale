@@ -1,22 +1,9 @@
 (()=>{
 'use strict';
-if(window.__NEET_COMPLETE_MENU__)return;window.__NEET_COMPLETE_MENU__=true;
-const current='scale';
-const items=[
- ['https://akito0802.github.io/NEET-note/','📝','ノート','note'],
- ['https://akito0802.github.io/NEET-note/lyrics.html','🎤','歌詞メモ','lyrics'],
- ['https://akito0802.github.io/NEET-note/voice-memo.html','🎙','ボイスメモ','voice'],
- ['https://akito0802.github.io/NEET-note/ideas.html','💡','アイデアメモ','ideas'],
- ['https://akito0802.github.io/NEET-note/tools.html','🧰','制作ツール','tools'],
- ['https://akito0802.github.io/NEET-note/calendar.html','📅','制作カレンダー','calendar'],
- ['https://akito0802.github.io/Cordhyo-/','📚','コード辞典','chord'],
- ['https://akito0802.github.io/Cordhyo-/mix-lab.html','🎛️','Mix Lab','mixlab'],
- ['https://akito0802.github.io/scale/','🎸','スケール辞典','scale'],
- ['https://akito0802.github.io/-h/','🎵','指板','fretboard'],
- ['https://akito0802.github.io/NEET-note/about.html','ℹ️','NEET NOTEについて','about']
-];
-const oldMenu=document.getElementById('menu'),oldOverlay=document.getElementById('overlay');if(oldMenu)oldMenu.hidden=true;if(oldOverlay)oldOverlay.hidden=true;
-const css=document.createElement('style');css.textContent=`.neet-menu-overlay{position:fixed;inset:0;z-index:29000;background:rgba(17,24,39,.48);opacity:0;visibility:hidden;pointer-events:none;transition:.22s;backdrop-filter:blur(2px)}.neet-menu-overlay.open{opacity:1;visibility:visible;pointer-events:auto}.neet-side-menu{position:fixed;inset:0 auto 0 0;z-index:29001;display:flex;flex-direction:column;width:min(86vw,320px);height:100dvh;padding:max(22px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom));box-sizing:border-box;background:var(--panel,#fffdf8);color:var(--ink,#1f2937);box-shadow:18px 0 46px rgba(0,0,0,.22);transform:translateX(-105%);visibility:hidden;transition:.24s;overflow:hidden}.neet-side-menu.open{transform:none;visibility:visible}.neet-menu-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:2px 4px 16px;border-bottom:1px solid var(--line,rgba(0,0,0,.1))}.neet-menu-brand{display:flex;align-items:center;gap:11px}.neet-menu-logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#eee1ce,#fffaf1);color:#5f452d;font-size:1.25rem}.neet-menu-brand b,.neet-menu-brand small{display:block}.neet-menu-brand small{margin-top:2px;color:var(--muted,#756f67);font-size:.68rem;font-weight:800;letter-spacing:.12em}.neet-menu-close{width:40px;height:40px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);color:inherit;font-size:1.25rem}.neet-menu-links{display:grid;gap:5px;margin:14px 0;overflow:auto}.neet-menu-link{display:flex;align-items:center;gap:12px;min-height:46px;padding:10px 12px;border:1px solid transparent;border-radius:13px;color:inherit;text-decoration:none;font-weight:800}.neet-menu-link.current{border-color:rgba(169,120,69,.22);background:rgba(169,120,69,.14)}.neet-menu-icon{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:rgba(169,120,69,.1)}.neet-menu-footer{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}.neet-menu-footer button{width:100%;border:0;background:transparent;text-align:left;font:inherit}.neet-menu-hamburger{display:grid!important;place-items:center!important;width:44px!important;height:44px!important;padding:0!important;border:1px solid var(--line)!important;border-radius:13px!important;background:var(--panel)!important;color:inherit!important;font-size:1.3rem!important}`;document.head.appendChild(css);
-const overlay=document.createElement('div');overlay.className='neet-menu-overlay';const nav=document.createElement('nav');nav.className='neet-side-menu';nav.setAttribute('aria-hidden','true');nav.innerHTML=`<div class="neet-menu-head"><div class="neet-menu-brand"><div class="neet-menu-logo">♪</div><div><b>NEET NOTE</b><small>COMPOSITION NOTE</small></div></div><button class="neet-menu-close" type="button">×</button></div><div class="neet-menu-links">${items.map(([href,icon,label,id])=>`<a class="neet-menu-link${id===current?' current':''}" href="${href}"${id===current?' aria-current="page"':''}><span class="neet-menu-icon">${icon}</span><span>${label}</span></a>`).join('')}</div><div class="neet-menu-footer"><button class="neet-menu-link" type="button" id="neetTheme"><span class="neet-menu-icon">🌙</span><span>ダークモード</span></button></div>`;document.body.append(overlay,nav);
-const trigger=document.getElementById('open');trigger.classList.add('neet-menu-hamburger');trigger.textContent='☰';const open=()=>{overlay.classList.add('open');nav.classList.add('open');nav.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'};const close=()=>{overlay.classList.remove('open');nav.classList.remove('open');nav.setAttribute('aria-hidden','true');document.body.style.overflow=''};trigger.onclick=open;overlay.onclick=close;nav.querySelector('.neet-menu-close').onclick=close;document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});nav.querySelector('#neetTheme').onclick=()=>document.getElementById('theme')?.click();
+const ROOT='https://akito0802.github.io/NEET-note/';
+if(window.__NEET_MENU_V4_LOADER__)return;
+const s=document.createElement('script');
+s.src=ROOT+'global-menu-v4.js?v=20260817-5';
+s.defer=true;
+document.body.appendChild(s);
 })();
