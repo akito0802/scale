@@ -15,7 +15,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
-          tag='<script src="https://akito0802.github.io/NEET-note/global-menu-v4.js?v=20260813-1"></script>'
+          tag='<script src="https://akito0802.github.io/NEET-note/global-menu-v4.js?v=20260817-4"></script>'
           for p in Path('.').rglob('*.html'):
               s=p.read_text(encoding='utf-8'); original=s
               s=re.sub(r'<script[^>]+src=["\']https://akito0802\.github\.io/NEET-note/global-menu(?:-v4)?\.js\?v=[^"\']+["\'][^>]*></script>','',s)
@@ -28,5 +28,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Switch all scale pages to NEETNOTE menu v4"
+          git commit -m "Unify scale pages with collision-safe global menu"
           git push
