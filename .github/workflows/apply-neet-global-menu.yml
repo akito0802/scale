@@ -15,9 +15,10 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
-          tag='<script src="https://akito0802.github.io/NEET-note/global-menu-v4.js?v=20260817-4"></script>'
+          tag='<script src="https://akito0802.github.io/NEET-note/global-menu-v4.js?v=20260817-5"></script>'
           for p in Path('.').rglob('*.html'):
               s=p.read_text(encoding='utf-8'); original=s
+              s=re.sub(r'neet-menu-ui\.js\?v=[^"\']+', 'neet-menu-ui.js?v=20260817-2', s)
               s=re.sub(r'<script[^>]+src=["\']https://akito0802\.github\.io/NEET-note/global-menu(?:-v4)?\.js\?v=[^"\']+["\'][^>]*></script>','',s)
               s=re.sub(r'<script[^>]+src=["\']https://akito0802\.github\.io/NEET-note/menu-dedupe\.js\?v=[^"\']+["\'][^>]*></script>','',s)
               s=s.replace('</body>',tag+'\n</body>',1) if '</body>' in s else s+'\n'+tag+'\n'
@@ -28,5 +29,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Unify scale pages with collision-safe global menu"
+          git commit -m "Bust scale menu cache and unify left-top menu"
           git push
